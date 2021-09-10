@@ -1,4 +1,7 @@
 # Firefly Obsidian Theme
+
+![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
+
 Firefly Theme is a dark theme for [Obsidian](https://obsidian.md/) in the making. The template a provides clean UI and decent color accents.
 
 ![](./assets/Screenshot.png)
