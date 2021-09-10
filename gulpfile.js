@@ -3,7 +3,7 @@ var sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
 function style() {
-  return gulp.src('./src/Firefly.scss')
+  return gulp.src('./scss/Firefly.scss')
   .pipe(sass())
   .pipe(gulp.dest('./'))
   .pipe(browserSync.stream());
@@ -15,7 +15,7 @@ function watch() {
       baseDir: './'
     }
   });
-  gulp.watch('./src/**/*.scss', style);
+  gulp.watch('./scss/**/*.scss', style);
 }
 
 exports.style = style;
