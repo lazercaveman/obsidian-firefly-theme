@@ -11,4 +11,4 @@ node_modules/
 
 # Prevent upload of CSS files but firefly.css (in case this runs directly within obsidian themes folder)
 *.css
-!Firefly.css
+!obsidian.css
