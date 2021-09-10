@@ -1,0 +1,93 @@
+
+
+.mod-root > .nav-folder-title {
+  display: none;
+}
+
+.nav-file-title.is-active {
+  background-color: color(primary, 200);
+}
+
+body:not(.is-grabbing) .nav-file-title:hover,
+body:not(.is-grabbing) .nav-folder-title:hover {
+  background-color: color(primary, 400);
+}
+
+.nav-folder-title,
+.nav-file-title,
+svg {
+  color: color(element, icon);
+}
+
+.nav-folder-title,
+.nav-file-title {
+  font-family: font(family, primary);
+}
+
+.nav-folder-title.is-being-dragged-over {
+  border: 1px solid color(element, border);
+}
+
+.nav-folder-children > .nav-file,
+.nav-folder-children > .nav-folder {
+  border-left: 1px solid color(element, border-light);
+}
+
+.mod-root > .nav-folder-children > .nav-file,
+.mod-root > .nav-folder-children > .nav-folder {
+  border-left: none;
+}
+
+.workspace-tab-container-before,
+.workspace-tab-container-after {
+  display: none;
+}
+
+.workspace-tab-header-container {
+  margin-top: 4px;
+  margin-left: 4px;
+  height: fit-content;
+}
+
+.nav-header {
+  .nav-buttons-container {
+    justify-content: flex-start;
+  }
+  .nav-action-button {
+    margin: 20px 0 10px 0;
+  }
+}
+
+.workspace-tab-container-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: color(primary, 1100);
+}
+
+.workspace-tab-header {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.workspace-tab-header-inner {
+  padding: 10px;
+  background-color: color(primary, 800);
+  border-radius: 10px;
+}
+
+.workspace-tab-header-inner-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workspace-tab-header.is-before-active,
+.workspace-tab-header.is-after-active {
+  background-color: transparent;
+  .workspace-tab-header-inner {
+    background-color: transparent;
+  }
+}

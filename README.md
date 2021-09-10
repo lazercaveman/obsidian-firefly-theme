@@ -15,7 +15,7 @@ This theme uses the [Inter](https://rsms.me/inter/) and [JetBrains Mono](https:/
 6. Select for Firefly and then you're done! 🎉
 
 ## License
-This Theme is under CC0-1.0 License - anyways, I don't really care what happens to this Theme, so absolutely feel free to use, change, modify or share this theme! ✌️ 
+This Theme is under CC0-1.0 License - so absolutely feel free to use, change, modify or share this theme! ✌️ 
 
 ## Credit
 This theme is inspired and more or less a mix of 

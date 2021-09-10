@@ -1,0 +1,19 @@
+{
+  "name": "color-de-lune-obsidian-theme",
+  "version": "1.0.0",
+  "description": "An Obsidian theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Soueidan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}

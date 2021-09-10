@@ -1,0 +1,94 @@
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  line-height: font(lineheight, regular);
+  font-weight: 500;
+  font-size: font(size, regular);
+}
+.cm-header-1 {
+  color: color(title, h1)
+}
+.cm-header-2 {
+  color: color(title, h2)
+}
+.cm-header-3 {
+  color: color(title, h3)
+}
+.cm-header-4 {
+  color: color(title, h4)
+}
+.cm-header-5 {
+  color: color(title, h5)
+}
+.cm-header-6 {
+  color: color(title, h6)
+}
+
+.cm-s-obsidian {
+  .cm-em,
+  .cm-strong {
+    color: color(text, strong);
+  }
+  span.cm-hmd-codeblock,
+  span.cm-hmd-indented-code,
+  span.cm-math,
+  pre.HyperMD-codeblock {
+    color: color(text, code);
+    font-family: font(family, secondary);
+    font-size: font(size, small);
+    font-weight: 500;
+    line-height: font(lineheight, max);
+  }
+}
+
+.cm-s-obsidian {
+  color: color(text, paragraph);
+  font-family: font(family, secondary);
+  font-size: font(size, regular);
+  font-weight: 500;
+  line-height: font(lineheight, regular);
+
+  .CodeMirror-linenumber {
+    color: color(primary, 100);
+    font-size: font(size, regular);
+  }
+
+  .CodeMirror-gutter-elt {
+    padding-right: 10px;
+  }
+
+  .cm-formatting,
+  .CodeMirror-foldmarker {
+    color: color(primary, 100);
+  }
+
+  .cm-formatting-link,
+  .cm-link {
+    color: color(text, link)!important;
+  }
+
+  .cm-formatting-link-string,
+  .cm-url {
+    color: color(text, linkUrl)!important;
+  }
+
+  span.cm-quote {
+    margin-left: 20px;
+    color: color(text, quote);
+    font-style: italic;
+    &.cm-formatting{
+      color: color(primary, 100);
+    }
+  }
+
+  span.cm-hashtag {
+    color: color(primary, 100);
+    &.cm-formatting{
+      color: color(primary, 100);
+    }
+  }
+
+}

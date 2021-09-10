@@ -1,0 +1,13 @@
+@import "./colors.scss";
+@import "./text.scss";
+
+
+.CodeMirror.cm-s-obsidian.CodeMirror-wrap, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 940px;
+}
+
+
+@import "./modules/editor/index.scss";
+@import "./modules/preview/index.scss";
+// @import "./modules/preview-export/index.scss";
+@import "./modules/ui/index.scss";

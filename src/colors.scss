@@ -1,0 +1,67 @@
+
+$colors: (
+  primary: (
+    100: #676f9b,
+    200: #5d648c,
+    300: #52597c,
+    400: #484e6d,
+    500: #3e435d,
+    600: #34384e,
+    700: #292c3e,
+    800: #1f212f,
+    900: #15161f,
+    1000: #0a0b0f,
+    1100: #050608,
+  ),
+  neutral: (
+    100: #c8d3f5,
+    200: #b4c2f0,
+    300: #a9b8e8,
+    400: #828bb8,
+    500: #444a73,
+    600: #2f334d,
+    700: #222436,
+    800: #1e2030,
+    900: #191a2a,
+  ),
+  title: (
+    h1: #ff6c9d,
+    h2: #82aaff,
+    h3: #6be399,
+    h4: #ff79c6,
+    h5: #8bcafd,
+    h6: #c5e478,
+  ),
+  element: (
+    icon: #adb9db,
+    border: #0a0b0f,
+    border-light: #484e6d,
+  ),
+  text: (
+    strong: #ff98a4,
+    code: #6be399,
+    paragraph: #c0cdf3,
+    quote: #8d99bb,
+    link: #67a0fb,
+    linkUrl: #555555,
+    hashTag: #95a0d9,
+  ),
+);
+
+.theme-dark {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --color-#{$color}-#{$shade}: #{$value};
+    }
+  }
+}
+
+@function color( $variant, $type ) {
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      @if #{$variant}-#{$type} == #{$color}-#{$shade} {
+        @return var(--color-#{$color}-#{$shade});
+      };
+    };
+  };
+};

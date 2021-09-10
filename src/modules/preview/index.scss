@@ -1,0 +1,152 @@
+.markdown-preview-view {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-family: font(family, primary);
+    font-weight: 600;
+    line-height: font(lineheight, regular);
+    display: block;
+    align-items: center;
+    white-space: pre-wrap;
+  }
+
+  h1 {
+    color: color(title, h1)
+  }
+
+  h2 {
+    color: color(title, h2)
+  }
+
+  h3 {
+    color: color(title, h3)
+  }
+
+  h4 {
+    color: color(title, h4)
+  }
+
+  h5 {
+    color: color(title, h5)
+  }
+
+  h6 {
+    color: color(title, h6)
+  }
+
+  h1,
+  h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid color(primary, 600);
+  }
+
+  .heading-collapse-indicator {
+    color: color(primary, 600);
+  }
+
+  p {
+    font-family: font(family, primary);
+    color: color(text, paragraph);
+  }
+
+  .tag {
+    padding: 5px;
+    color: color(text, link);
+    border-radius: 5px;
+    background-color: color(primary, 900);
+    font-size: font(size, regular);
+    font-weight: 900;
+    letter-spacing: -0.05ch;
+  }
+
+  ul:not(.contains-task-list) ul:not(.contains-task-list) {
+    margin-left: -13px;
+    padding-inline-start: 42px;
+    border-left: 1px solid color(primary, 500);
+  }
+
+  ul,
+  ol {
+    li {
+      margin: 5px 0;
+      color: color(text, paragraph);
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li:not(.task-list-item)::before {
+      content: "\2022";
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      color: color(text, paragraph);
+      font-weight: bold;
+    }
+  }
+
+  .list-collapse-indicator {
+    color: color(primary, 500);
+  }
+
+  li > p {
+    display: inline;
+  }
+
+  pre {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px !important;
+    background-color: color(primary, 1000)!important;
+    font-family: font(family, secondary);
+    font-weight: 500;
+    line-height: font(lineheight, regular);
+    border-radius: 5px !important;
+
+    code {
+      color: color(text, code);
+      background-color: unset;
+    }
+  }
+
+  a {
+    color: color(text, link);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.external-link {
+      padding-right: 20px;
+    }
+
+    &.internal-link {
+      text-decoration: none;
+      color: color(text, link);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  blockquote {
+    margin-left: 20px;
+    padding: 20px;
+    border: unset;
+    border-left: 3px solid color(primary, 500);
+    font-style: italic;
+    p {
+      color: color(text, quote);
+    }
+  }
+
+}

@@ -1,0 +1,55 @@
+:root {
+  --font-editor-size: 1em;
+  --font-editor-linenumbers-size: medium;
+  --font-math-preview-size: 1.126em;
+  --font-tag-preview-size: 0.9em;
+  --font-hover-preview-size: 0.9em;
+  --font-prompts-size: 0.875em;
+  --font-todoist-title-size: 1em;
+  --font-todoist-metadata-size: small;
+}
+
+$primaryFont: "Inter", sans-serif;
+$secondaryFont: "Jetbrains Mono", monospace;
+
+$fonts: (
+  family: (
+    primary: $primaryFont,
+    secondary: $secondaryFont,
+  ),
+  size: (
+    xtraSmall: .75em,
+    small: .95em,
+    regular: 1em,
+    h1: 2em,
+    h2: 1.5em,
+    h3: 1.25,
+    h4: 1em,
+    h5: 0.875em,
+    h6: 0.85em,
+  ),
+  lineheight: (
+    min: 1em,
+    medium: 1.5em,
+    regular: 1.75em,
+    max: 2em,
+  ),
+);
+
+:root {
+  @each $color, $shades in $fonts {
+    @each $shade, $value in $shades {
+      --color-#{$color}-#{$shade}: #{$value};
+    }
+  }
+}
+
+@function font( $variant, $type ) {
+  @each $color, $shades in $fonts {
+    @each $shade, $value in $shades {
+      @if #{$variant}-#{$type} == #{$color}-#{$shade} {
+        @return var(--color-#{$color}-#{$shade});
+      };
+    };
+  };
+};
