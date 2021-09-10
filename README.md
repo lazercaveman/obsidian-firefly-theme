@@ -4,7 +4,7 @@
 
 Firefly Theme is a dark theme for [Obsidian](https://obsidian.md/) in the making. The template a provides clean UI and decent color accents.
 
-![](./assets/Screenshot.png)
+![](./firefly-theme-screenshot.png)
 
 I took inspiration from some other themes (see credits), with the goal of creating an Obsidian theme that has more of the look and feel of a code editor in editor mode, and relies on more extended text formatting in preview mode, to deliver more of a blog ux. 
 
