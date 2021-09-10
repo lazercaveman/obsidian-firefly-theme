@@ -67,10 +67,6 @@
   --color-lineheight-max: 2em;
 }
 
-.CodeMirror.cm-s-obsidian.CodeMirror-wrap, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-  max-width: 940px;
-}
-
 .cm-header-1,
 .cm-header-2,
 .cm-header-3,
@@ -283,6 +279,10 @@
 }
 .markdown-preview-view blockquote p {
   color: var(--color-text-quote);
+}
+
+.CodeMirror.cm-s-obsidian.CodeMirror-wrap, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 940px;
 }
 
 .mod-root > .nav-folder-title {
