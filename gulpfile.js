@@ -3,7 +3,7 @@ var sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 
 function style() {
-  return gulp.src('./scss/Firefly.scss')
+  return gulp.src('./scss/obsidian.scss')
   .pipe(sass())
   .pipe(gulp.dest('./'))
   .pipe(browserSync.stream());

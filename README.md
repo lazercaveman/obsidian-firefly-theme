@@ -12,11 +12,12 @@ I took inspiration from some other themes (see credits), with the goal of creati
 This is the first version of the Theme, and some stuff may not be implemented yet - it works for me for now. If you miss something feel free to get in touch or even participate if you like.
 
 ## How-To implement the Theme into Obsidian
-1. Download `Firefly.css`from the this repo.
-2. Place this in the root of your Obsidian notes directory.
-3. Open the Settings in Obsidian
+1. Download `obsidian.css`from the this repo.
+1. Rename the file to `Firefly.css`, to make sure that it has a unique name (preventing duplicates).
+2. Place the file into your vault's /.obsidian/themes directory.
+3. Open the Settings in Obsidian.
 4. Navigate to Appearances tab under Options, also Ensure that the 'Base mode' setting is set to `Dark mode` and that 'Custom CSS' is turned on.
-5. Under the Themes section, click on the dropdown menu next to Theme heading
+5. Under the Themes section, click on the dropdown menu next to Theme heading.
 6. Select for Firefly and then you're done! 🎉
 
 ## Fonts
