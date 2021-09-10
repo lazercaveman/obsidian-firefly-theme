@@ -28,28 +28,28 @@
 }
 
 .cm-s-obsidian {
-  .cm-em,
-  .cm-strong {
-    color: color(text, strong);
-  }
-  span.cm-hmd-codeblock,
-  span.cm-hmd-indented-code,
-  span.cm-math,
-  pre.HyperMD-codeblock {
-    color: color(text, code);
-    font-family: font(family, secondary);
-    font-size: font(size, small);
-    font-weight: 500;
-    line-height: font(lineheight, max);
-  }
-}
-
-.cm-s-obsidian {
   color: color(text, paragraph);
   font-family: font(family, secondary);
   font-size: font(size, regular);
   font-weight: 500;
   line-height: font(lineheight, regular);
+
+  .cm-em,
+  .cm-strong {
+    color: color(text, strong);
+  }
+
+  pre.HyperMD-codeblock {
+    font-family: font(family, secondary);
+    font-size: font(size, small);
+    font-weight: 500;
+    line-height: font(lineheight, max);
+    background-color: color(primary, 1100);
+  }
+
+  .cm-hmd-codeblock {
+    color: color(text, code);
+  }
 
   .CodeMirror-linenumber {
     color: color(primary, 100);
@@ -85,7 +85,10 @@
   }
 
   span.cm-hashtag {
-    color: color(primary, 100);
+    padding: 5px;
+    color: color(text, hash-tag);
+    background-color: color(primary, 900);
+    font-size: font(size, regular);
     &.cm-formatting{
       color: color(primary, 100);
     }

@@ -11,15 +11,6 @@
   --color-primary-900: #15161f;
   --color-primary-1000: #0a0b0f;
   --color-primary-1100: #050608;
-  --color-neutral-100: #c8d3f5;
-  --color-neutral-200: #b4c2f0;
-  --color-neutral-300: #a9b8e8;
-  --color-neutral-400: #828bb8;
-  --color-neutral-500: #444a73;
-  --color-neutral-600: #2f334d;
-  --color-neutral-700: #222436;
-  --color-neutral-800: #1e2030;
-  --color-neutral-900: #191a2a;
   --color-title-h1: #ff6c9d;
   --color-title-h2: #82aaff;
   --color-title-h3: #6be399;
@@ -32,10 +23,10 @@
   --color-text-strong: #ff98a4;
   --color-text-code: #6be399;
   --color-text-paragraph: #c0cdf3;
-  --color-text-quote: #8d99bb;
+  --color-text-quote: #a1acce;
   --color-text-link: #67a0fb;
   --color-text-linkUrl: #555555;
-  --color-text-hashTag: #95a0d9;
+  --color-text-hash-tag: #adb9db;
 }
 
 :root {
@@ -52,15 +43,11 @@
 :root {
   --color-family-primary: Inter, sans-serif;
   --color-family-secondary: Jetbrains Mono, monospace;
-  --color-size-xtraSmall: 0.75em;
-  --color-size-small: 0.95em;
-  --color-size-regular: 1em;
-  --color-size-h1: 2em;
-  --color-size-h2: 1.5em;
-  --color-size-h3: 1.25;
-  --color-size-h4: 1em;
-  --color-size-h5: 0.875em;
-  --color-size-h6: 0.85em;
+  --color-size-xtraSmall: 0.75rem;
+  --color-size-small: 0.95rem;
+  --color-size-regular: 1rem;
+  --color-size-large: 1.25rem;
+  --color-size-xtraLarge: 2rem;
   --color-lineheight-min: 1em;
   --color-lineheight-medium: 1.5em;
   --color-lineheight-regular: 1.75em;
@@ -102,27 +89,26 @@
   color: var(--color-title-h6);
 }
 
-.cm-s-obsidian .cm-em,
-.cm-s-obsidian .cm-strong {
-  color: var(--color-text-strong);
-}
-.cm-s-obsidian span.cm-hmd-codeblock,
-.cm-s-obsidian span.cm-hmd-indented-code,
-.cm-s-obsidian span.cm-math,
-.cm-s-obsidian pre.HyperMD-codeblock {
-  color: var(--color-text-code);
-  font-family: var(--color-family-secondary);
-  font-size: var(--color-size-small);
-  font-weight: 500;
-  line-height: var(--color-lineheight-max);
-}
-
 .cm-s-obsidian {
   color: var(--color-text-paragraph);
   font-family: var(--color-family-secondary);
   font-size: var(--color-size-regular);
   font-weight: 500;
   line-height: var(--color-lineheight-regular);
+}
+.cm-s-obsidian .cm-em,
+.cm-s-obsidian .cm-strong {
+  color: var(--color-text-strong);
+}
+.cm-s-obsidian pre.HyperMD-codeblock {
+  font-family: var(--color-family-secondary);
+  font-size: var(--color-size-small);
+  font-weight: 500;
+  line-height: var(--color-lineheight-max);
+  background-color: var(--color-primary-1100);
+}
+.cm-s-obsidian .cm-hmd-codeblock {
+  color: var(--color-text-code);
 }
 .cm-s-obsidian .CodeMirror-linenumber {
   color: var(--color-primary-100);
@@ -152,7 +138,10 @@
   color: var(--color-primary-100);
 }
 .cm-s-obsidian span.cm-hashtag {
-  color: var(--color-primary-100);
+  padding: 5px;
+  color: var(--color-text-hash-tag);
+  background-color: var(--color-primary-900);
+  font-size: var(--color-size-regular);
 }
 .cm-s-obsidian span.cm-hashtag.cm-formatting {
   color: var(--color-primary-100);
@@ -201,16 +190,16 @@
 }
 .markdown-preview-view p {
   font-family: var(--color-family-primary);
+  font-size: var(--color-size-large);
   color: var(--color-text-paragraph);
 }
 .markdown-preview-view .tag {
   padding: 5px;
-  color: var(--color-text-link);
-  border-radius: 5px;
+  color: var(--color-text-hash-tag);
   background-color: var(--color-primary-900);
+  border-radius: 5px;
   font-size: var(--color-size-regular);
-  font-weight: 900;
-  letter-spacing: -0.05ch;
+  font-weight: 500;
 }
 .markdown-preview-view ul:not(.contains-task-list) ul:not(.contains-task-list) {
   margin-left: -13px;
@@ -221,6 +210,7 @@
 .markdown-preview-view ol li {
   margin: 5px 0;
   color: var(--color-text-paragraph);
+  font-size: var(--color-size-large);
 }
 .markdown-preview-view ul {
   list-style: none;
@@ -231,6 +221,7 @@
   width: 1em;
   margin-left: -1em;
   color: var(--color-text-paragraph);
+  font-size: var(--color-size-large);
   font-weight: bold;
 }
 .markdown-preview-view .list-collapse-indicator {
@@ -242,15 +233,16 @@
 .markdown-preview-view pre {
   margin-top: 40px;
   margin-bottom: 40px;
-  padding: 20px !important;
-  background-color: var(--color-primary-1000) !important;
+  padding: 20px;
+  background-color: var(--color-primary-1000);
   font-family: var(--color-family-secondary);
   font-weight: 500;
   line-height: var(--color-lineheight-regular);
-  border-radius: 5px !important;
+  border-radius: 5px;
 }
 .markdown-preview-view pre code {
   color: var(--color-text-code);
+  font-size: var(--color-size-regular);
   background-color: unset;
 }
 .markdown-preview-view a {

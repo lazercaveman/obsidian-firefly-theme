@@ -52,17 +52,17 @@
 
   p {
     font-family: font(family, primary);
+    font-size: font(size, large);
     color: color(text, paragraph);
   }
 
   .tag {
     padding: 5px;
-    color: color(text, link);
-    border-radius: 5px;
+    color: color(text, hash-tag);
     background-color: color(primary, 900);
+    border-radius: 5px;
     font-size: font(size, regular);
-    font-weight: 900;
-    letter-spacing: -0.05ch;
+    font-weight: 500;
   }
 
   ul:not(.contains-task-list) ul:not(.contains-task-list) {
@@ -76,6 +76,7 @@
     li {
       margin: 5px 0;
       color: color(text, paragraph);
+      font-size: font(size, large);
     }
   }
 
@@ -88,6 +89,7 @@
       width: 1em;
       margin-left: -1em;
       color: color(text, paragraph);
+      font-size: font(size, large);
       font-weight: bold;
     }
   }
@@ -103,15 +105,16 @@
   pre {
     margin-top: 40px;
     margin-bottom: 40px;
-    padding: 20px !important;
-    background-color: color(primary, 1000)!important;
+    padding: 20px;
+    background-color: color(primary, 1000);
     font-family: font(family, secondary);
     font-weight: 500;
     line-height: font(lineheight, regular);
-    border-radius: 5px !important;
+    border-radius: 5px;
 
     code {
       color: color(text, code);
+      font-size: font(size, regular);
       background-color: unset;
     }
   }
