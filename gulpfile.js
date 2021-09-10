@@ -5,16 +5,10 @@ const browserSync = require('browser-sync').create();
 function style() {
   return gulp.src('./scss/obsidian.scss')
   .pipe(sass())
-  .pipe(gulp.dest('./'))
-  .pipe(browserSync.stream());
+  .pipe(gulp.dest('./'));
 }
 
 function watch() {
-  browserSync.init({
-    server: {
-      baseDir: './'
-    }
-  });
   gulp.watch('./scss/**/*.scss', style);
 }
 
