@@ -1,0 +1,29 @@
+.modal-content,
+.modal.mod-settings,
+.vertical-tab-content-container,
+.vertical-tab-content,
+.vertical-tabs-container {
+  background-color: color(primary, 700);
+
+  input[type=range]::-webkit-slider-thumb {
+    background: #ffffff;
+  }
+
+}
+
+.vertical-tab-header, .vertical-tab-header-group, .vertical-tab-header-group, .modal.mod-settings, .vertical-tab-header-group, .vertical-tab-header-group-items, .vertical-tab-nav-item {
+  background-color: color(primary, 900);
+
+  &.is-active {
+    background-color: color(primary, 800);
+    border-color: color(element, icon);
+  }
+}
+
+.checkbox-container {
+  background-color: color(primary, 100);
+
+  &.is-enabled {
+    background-color: color(title, h3);
+  }
+}
