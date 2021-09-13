@@ -450,3 +450,33 @@ svg {
   color: var(--color-element-icon);
   background-color: var(--color-primary-800);
 }
+
+.modal-content,
+.modal.mod-settings,
+.vertical-tab-content-container,
+.vertical-tab-content,
+.vertical-tabs-container {
+  background-color: var(--color-primary-700);
+}
+.modal-content input[type=range]::-webkit-slider-thumb,
+.modal.mod-settings input[type=range]::-webkit-slider-thumb,
+.vertical-tab-content-container input[type=range]::-webkit-slider-thumb,
+.vertical-tab-content input[type=range]::-webkit-slider-thumb,
+.vertical-tabs-container input[type=range]::-webkit-slider-thumb {
+  background: #ffffff;
+}
+
+.vertical-tab-header, .vertical-tab-header-group, .vertical-tab-header-group, .modal.mod-settings, .vertical-tab-header-group, .vertical-tab-header-group-items, .vertical-tab-nav-item {
+  background-color: var(--color-primary-900);
+}
+.vertical-tab-header.is-active, .vertical-tab-header-group.is-active, .vertical-tab-header-group.is-active, .modal.mod-settings.is-active, .vertical-tab-header-group.is-active, .vertical-tab-header-group-items.is-active, .vertical-tab-nav-item.is-active {
+  background-color: var(--color-primary-800);
+  border-color: var(--color-element-icon);
+}
+
+.checkbox-container {
+  background-color: var(--color-primary-100);
+}
+.checkbox-container.is-enabled {
+  background-color: var(--color-title-h3);
+}
