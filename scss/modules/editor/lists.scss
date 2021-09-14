@@ -1,0 +1,11 @@
+.cm-s-obsidian {
+
+  span.cm-formatting-list-ol {
+    color: color(element, ordered-list-indicator);
+  }
+
+  span.cm-formatting-list-ul {
+    color: color(element, unordered-list-indicator);
+  }
+
+}

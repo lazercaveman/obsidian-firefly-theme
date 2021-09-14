@@ -1,0 +1,12 @@
+.cm-s-obsidian {
+
+  .CodeMirror-gutter-elt {
+    padding-right: 10px;
+  }
+
+  .cm-formatting,
+  .CodeMirror-foldmarker {
+    color: color(primary, 100);
+  }
+
+}

@@ -141,26 +141,6 @@
 .cm-s-obsidian .cm-strong {
   color: var(--color-text-strong);
 }
-.cm-s-obsidian pre.HyperMD-codeblock {
-  font-family: var(--color-family-secondary);
-  font-size: var(--color-size-small);
-  font-weight: 500;
-  line-height: var(--color-lineheight-max);
-}
-.cm-s-obsidian .cm-hmd-codeblock {
-  color: var(--color-text-code);
-}
-.cm-s-obsidian .CodeMirror-linenumber {
-  color: var(--color-primary-100);
-  font-size: var(--color-size-regular);
-}
-.cm-s-obsidian .CodeMirror-gutter-elt {
-  padding-right: 10px;
-}
-.cm-s-obsidian .cm-formatting,
-.cm-s-obsidian .CodeMirror-foldmarker {
-  color: var(--color-primary-100);
-}
 .cm-s-obsidian .cm-formatting-link,
 .cm-s-obsidian .cm-link {
   color: var(--color-text-link) !important;
@@ -177,6 +157,20 @@
 .cm-s-obsidian span.cm-quote.cm-formatting {
   color: var(--color-primary-100);
 }
+
+.cm-s-obsidian pre.HyperMD-codeblock {
+  font-family: var(--color-family-secondary);
+  font-size: var(--color-size-small);
+  font-weight: 500;
+  line-height: var(--color-lineheight-max);
+}
+.cm-s-obsidian .cm-hmd-codeblock {
+  color: var(--color-text-code);
+}
+.cm-s-obsidian .CodeMirror-linenumber {
+  color: var(--color-primary-100);
+  font-size: var(--color-size-regular);
+}
 .cm-s-obsidian span.cm-tag {
   color: var(--color-element-markup-tags);
 }
@@ -186,12 +180,22 @@
 .cm-s-obsidian span.cm-string {
   color: var(--color-element-markup-attribute-value);
 }
+
+.cm-s-obsidian .CodeMirror-gutter-elt {
+  padding-right: 10px;
+}
+.cm-s-obsidian .cm-formatting,
+.cm-s-obsidian .CodeMirror-foldmarker {
+  color: var(--color-primary-100);
+}
+
 .cm-s-obsidian span.cm-formatting-list-ol {
   color: var(--color-element-ordered-list-indicator);
 }
 .cm-s-obsidian span.cm-formatting-list-ul {
   color: var(--color-element-unordered-list-indicator);
 }
+
 .cm-s-obsidian span.cm-hashtag {
   padding: 5px;
   color: var(--color-text-hash-tag);

@@ -1,0 +1,34 @@
+.cm-s-obsidian {
+
+  pre.HyperMD-codeblock {
+    font-family: font(family, secondary);
+    font-size: font(size, small);
+    font-weight: 500;
+    line-height: font(lineheight, max);
+    // DEBUG: setting a background-color is currently leading to text-selections is overlayed by the background https://forum.obsidian.md/t/inline-code-occludes-text-selection-and-vim-cursor/11552/8
+    // background-color: color(primary, 1100);
+  }
+
+  .cm-hmd-codeblock {
+    color: color(text, code);
+  }
+
+  .CodeMirror-linenumber {
+    color: color(primary, 100);
+    font-size: font(size, regular);
+  }
+
+  // Markup-Styling
+  span {
+    &.cm-tag {
+      color: color(element, markup-tags);
+    }
+    &.cm-attribute {
+      color: color(element, markup-attribute);
+    }
+    &.cm-string {
+      color: color(element, markup-attribute-value);
+    }
+  }
+
+}
