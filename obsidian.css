@@ -15,12 +15,12 @@
   --color-title-h2: #82aaff;
   --color-title-h3: #6be399;
   --color-title-h4: #ff79c6;
-  --color-title-h5: #8bcafd;
+  --color-title-h5: #f9fd8b;
   --color-title-h6: #c5e478;
   --color-element-icon: #adb9db;
   --color-element-border: #0a0b0f;
   --color-element-border-light: #484e6d;
-  --color-text-strong: #ff98a4;
+  --color-text-strong: #ebeff7;
   --color-text-code: #6be399;
   --color-text-paragraph: #c0cdf3;
   --color-text-quote: #a1acce;
@@ -50,6 +50,7 @@
   --color-element-icon: #1f212f;
   --color-element-border: #fff;
   --color-element-border-light: #fff;
+  --color-effect-textGlow: #ff98a4;
   --color-text-strong: #ff98a4;
   --color-text-code: #6be399;
   --color-text-paragraph: #1f212f;
@@ -77,7 +78,11 @@
   --color-size-small: 0.95rem;
   --color-size-regular: 1rem;
   --color-size-large: 1.25rem;
-  --color-size-xtraLarge: 2rem;
+  --color-size-xtra-large: 1.25rem;
+  --color-size-2xtra-large: 1.5rem;
+  --color-size-3xtra-large: 1.75rem;
+  --color-size-4xtra-large: 2rem;
+  --color-size-5xtra-large: 2.25rem;
   --color-lineheight-min: 1em;
   --color-lineheight-medium: 1.5em;
   --color-lineheight-regular: 1.75em;
@@ -183,8 +188,7 @@
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-family: var(--color-family-primary);
   font-weight: 600;
   line-height: var(--color-lineheight-regular);
@@ -193,35 +197,53 @@
   white-space: pre-wrap;
 }
 .markdown-preview-view h1 {
+  font-size: var(--color-size-5xtra-large);
   color: var(--color-title-h1);
+  margin-top: 0;
 }
 .markdown-preview-view h2 {
+  font-size: var(--color-size-4xtra-large);
+  margin-top: 80px;
   color: var(--color-title-h2);
 }
 .markdown-preview-view h3 {
+  font-size: var(--color-size-3xtra-large);
+  margin-top: 40px;
   color: var(--color-title-h3);
 }
 .markdown-preview-view h4 {
+  font-size: var(--color-size-2xtra-large);
+  margin-top: 40px;
   color: var(--color-title-h4);
 }
 .markdown-preview-view h5 {
+  font-size: var(--color-size-xtra-large);
+  margin-top: 40px;
   color: var(--color-title-h5);
 }
 .markdown-preview-view h6 {
+  font-size: var(--color-size-xtra-large);
+  margin-top: 40px;
   color: var(--color-title-h6);
 }
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid var(--color-primary-600);
 }
 .markdown-preview-view .heading-collapse-indicator {
   color: var(--color-primary-600);
 }
 .markdown-preview-view p {
+  font-weight: 400;
   font-family: var(--color-family-primary);
   font-size: var(--color-size-large);
   color: var(--color-text-paragraph);
+}
+.markdown-preview-view p strong {
+  font-weight: 400;
+  color: var(--color-text-strong);
+  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
 }
 .markdown-preview-view .tag {
   padding: 5px;
@@ -301,6 +323,10 @@
 }
 .markdown-preview-view blockquote p {
   color: var(--color-text-quote);
+}
+
+iframe {
+  margin: 40px 0;
 }
 
 .CodeMirror.cm-s-obsidian.CodeMirror-wrap, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {

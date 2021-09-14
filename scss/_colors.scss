@@ -18,7 +18,7 @@ $colors: (
     h2: #82aaff,
     h3: #6be399,
     h4: #ff79c6,
-    h5: #8bcafd,
+    h5: #f9fd8b,
     h6: #c5e478,
   ),
   element: (
@@ -27,7 +27,7 @@ $colors: (
     border-light: #484e6d,
   ),
   text: (
-    strong: #ff98a4,
+    strong: #ebeff7,
     code: #6be399,
     paragraph: #c0cdf3,
     quote: #a1acce,
@@ -72,6 +72,9 @@ $colorsLight: (
     icon: #1f212f,
     border: #fff,
     border-light: #fff,
+  ),
+  effect: (
+    textGlow: #ff98a4,
   ),
   text: (
     strong: #ff98a4,
