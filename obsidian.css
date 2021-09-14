@@ -337,11 +337,12 @@
 }
 .markdown-preview-view pre code {
   color: var(--color-text-code);
+  line-height: var(--color-lineheight-max) !important;
   font-size: var(--color-size-regular);
-  background-color: unset;
+  background-color: unset !important;
 }
 
-.markdown-preview-view .tag {
+.markdown-preview-view p .tag {
   padding: 10px;
   color: var(--color-text-hash-tag);
   background-color: var(--color-primary-1000);

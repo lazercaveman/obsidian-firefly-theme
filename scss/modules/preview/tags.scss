@@ -1,12 +1,14 @@
 .markdown-preview-view {
 
-  .tag {
-    padding: 10px;
-    color: color(text, hash-tag);
-    background-color: color(primary, 1000);
-    border-radius: 5px;
-    font-size: font(size, regular);
-    font-weight: 500;
+  p {
+    .tag {
+      padding: 10px;
+      color: color(text, hash-tag);
+      background-color: color(primary, 1000);
+      border-radius: 5px;
+      font-size: font(size, regular);
+      font-weight: 500;
+    }
   }
 
 }
