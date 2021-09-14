@@ -38,5 +38,5 @@ This theme is inspired and more or less a mix of
 - 🎊   [Night Owl Theme, by Ben Hong](https://github.com/bencodezen/obsidian-night-owl-theme)
 - 🎊  [Clair de Lune Obsidian Theme, by Jamie Brynes](https://github.com/jamiebrynes7/clair-de-lune-obsidian-theme)
 
-## 🙌 License
+## ✌️ License
 This Theme is under CC0-1.0 License - so absolutely feel free to use, change, modify or share this theme! ✌️ 
