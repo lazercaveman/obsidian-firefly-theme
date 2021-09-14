@@ -11,7 +11,16 @@ I took inspiration from some other themes (see credits), with the goal of creati
 ## Version Note
 This is the first version of the Theme, and some stuff may not be implemented yet - it works for me for now. If you miss something feel free to get in touch or even participate if you like.
 
-## How-To implement the Theme into Obsidian
+## How-To Install the Firefly Theme into Obsidian
+
+### Through Obsidian Marketplace (Recommended)
+1. Open the Settings in Obsidian
+2. Navigate to Appearances tab under Options
+3. Under the Themes section, click on the Browse button next to Community Themes
+4. Search for Night Owl in the Filter text input in the upper left corner
+5. Click Use and then you're done! 🎉
+
+### Manually
 1. Download `obsidian.css`from the this repo.
 1. Rename the file to `Firefly.css`, to make sure that it has a unique name (preventing duplicates).
 2. Place the file into your vault's /.obsidian/themes directory.
