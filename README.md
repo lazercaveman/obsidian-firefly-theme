@@ -1,4 +1,4 @@
-# Firefly Obsidian Theme
+# 🚀 Firefly Obsidian Theme
 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
 
@@ -8,10 +8,7 @@ Firefly Theme is a dark theme for [Obsidian](https://obsidian.md/) in the making
 
 I took inspiration from some other themes (see credits), with the goal of creating an Obsidian theme that has more of the look and feel of a code editor in editor mode, and relies on more extended text formatting in preview mode, to deliver more of a blog ux. 
 
-## Version Note
-This is the first version of the Theme, and some stuff may not be implemented yet - it works for me for now. If you miss something feel free to get in touch or even participate if you like.
-
-## How-To Install the Firefly Theme into Obsidian
+## 📥  How-To Install the Firefly Theme into Obsidian
 
 ### Through Obsidian Marketplace (Recommended)
 1. Open the Settings in Obsidian
@@ -29,14 +26,17 @@ This is the first version of the Theme, and some stuff may not be implemented ye
 5. Under the Themes section, click on the dropdown menu next to Theme heading.
 6. Select for Firefly and then you're done! 🎉
 
-## Fonts
+## 📓 Fonts
 This theme uses the [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://jetbrains.com/mono) fonts. For the best experience, I recommend installing these fonts onto your local machine.
 
-## Credits
+## 🙌 About
+This is the first version of the Theme, and some stuff may not be implemented yet - it works for me for now. If you miss something feel free to get in touch or even participate if you like.
+
+## 🥳 Credits
 This theme is inspired and more or less a mix of 
 - [Tokyo Night Obsidian Theme, by Ruslan Gagushin](https://github.com/RuslanGagushin/Tokyo-Night-Obsidian-Theme)
 - [Night Owl Theme, by Ben Hong](https://github.com/bencodezen/obsidian-night-owl-theme)
 - [Clair de Lune Obsidian Theme, by Jamie Brynes](https://github.com/jamiebrynes7/clair-de-lune-obsidian-theme)
 
-## License
+## 👨‍⚖️ License
 This Theme is under CC0-1.0 License - so absolutely feel free to use, change, modify or share this theme! ✌️ 
