@@ -10,8 +10,8 @@
   --color-primary-900: #15161f;
   --color-primary-1000: #0a0b0f;
   --color-primary-1100: #050608;
-  --color-title-h1: #00C9A7;
-  --color-title-h2: #00C9A7;
+  --color-title-h1: #845EC2;
+  --color-title-h2: #D65DB1;
   --color-title-h3: #FF6F91;
   --color-title-h4: #FF9671;
   --color-title-h5: #FFC75F;
@@ -25,7 +25,8 @@
   --color-element-markup-attribute: #555555;
   --color-element-markup-attribute-value: #555555;
   --color-text-strong: #ebeff7;
-  --color-text-code: #6be399;
+  --color-text-code: #00C9A7;
+  --color-text-inline-code: #00C9A7;
   --color-text-paragraph: #c0cdf3;
   --color-text-quote: #a1acce;
   --color-text-link: #67a0fb;
@@ -170,6 +171,9 @@
 .cm-s-obsidian .CodeMirror-linenumber {
   color: var(--color-primary-100);
   font-size: var(--color-size-regular);
+}
+.cm-s-obsidian span.cm-inline-code {
+  color: var(--color-text-code);
 }
 .cm-s-obsidian span.cm-tag {
   color: var(--color-element-markup-tags);
@@ -346,6 +350,12 @@
   line-height: var(--color-lineheight-xtra-large) !important;
   font-size: var(--color-size-regular);
   background-color: unset !important;
+}
+.markdown-preview-view p code {
+  padding: 3px 10px;
+  color: var(--color-text-inline-code);
+  background-color: var(--color-primary-1100) !important;
+  border-radius: 5px;
 }
 
 .markdown-preview-view p .tag {

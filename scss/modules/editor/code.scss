@@ -18,6 +18,10 @@
     font-size: font(size, regular);
   }
 
+  span.cm-inline-code {
+    color: color(text, code);
+  }
+
   // Markup-Styling
   span {
     &.cm-tag {
