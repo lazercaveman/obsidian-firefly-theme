@@ -90,7 +90,9 @@
   --color-lineheight-min: 1em;
   --color-lineheight-medium: 1.5em;
   --color-lineheight-regular: 1.75em;
-  --color-lineheight-max: 2em;
+  --color-lineheight-large: 2em;
+  --color-lineheight-xtra-large: 2.25em;
+  --color-lineheight-max: 2.5em;
 }
 
 .cm-header-1,
@@ -337,7 +339,7 @@
 }
 .markdown-preview-view pre code {
   color: var(--color-text-code);
-  line-height: var(--color-lineheight-max) !important;
+  line-height: var(--color-lineheight-xtra-large) !important;
   font-size: var(--color-size-regular);
   background-color: unset !important;
 }
