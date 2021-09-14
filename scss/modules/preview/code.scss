@@ -1,0 +1,19 @@
+.markdown-preview-view {
+
+  pre {
+    margin: 40px 0!important;
+    padding: 20px;
+    background-color: color(primary, 1100)!important;
+    font-family: font(family, secondary);
+    font-weight: 500;
+    line-height: font(lineheight, regular);
+    border-radius: 5px;
+
+    code {
+      color: color(text, code);
+      font-size: font(size, regular);
+      background-color: unset;
+    }
+  }
+
+}

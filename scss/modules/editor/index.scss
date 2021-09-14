@@ -44,7 +44,8 @@
     font-size: font(size, small);
     font-weight: 500;
     line-height: font(lineheight, max);
-    background-color: color(primary, 1100);
+    // DEBUG: setting a background-color is currently leading to text-selections is overlayed by the background https://forum.obsidian.md/t/inline-code-occludes-text-selection-and-vim-cursor/11552/8
+    // background-color: color(primary, 1100);
   }
 
   .cm-hmd-codeblock {
@@ -83,6 +84,24 @@
       color: color(primary, 100);
     }
   }
+
+  span.cm-tag {
+    color: color(element, markup-tags);
+  }
+  span.cm-attribute {
+    color: color(element, markup-attribute);
+  }
+  span.cm-string {
+    color: color(element, markup-attribute-value);
+  }
+
+  span.cm-formatting-list-ol {
+    color: color(element, ordered-list-indicator);
+ }
+
+ span.cm-formatting-list-ul {
+    color: color(element, unordered-list-indicator);
+ }
 
   span.cm-hashtag {
     padding: 5px;

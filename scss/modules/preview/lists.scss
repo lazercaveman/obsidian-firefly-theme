@@ -1,0 +1,45 @@
+.markdown-preview-view {
+
+  ul:not(.contains-task-list) ul:not(.contains-task-list) {
+    margin-left: -13px;
+    padding-inline-start: 42px;
+    border-left: 1px solid color(primary, 500);
+  }
+
+  ul,
+  ol {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+      color: color(text, paragraph);
+      font-size: font(size, large);
+    }
+  }
+
+  ul li {
+    padding-left: 10px;
+    &::marker {
+      color: color(element, unordered-list-indicator);
+    }
+  }
+
+  ol li {
+    padding-left: 10px;
+
+    &::marker {
+      color: color(element, ordered-list-indicator);
+    }
+  }
+
+  .list-collapse-indicator {
+    color: color(primary, 500);
+  }
+
+  li > p {
+    display: inline;
+  }
+
+}

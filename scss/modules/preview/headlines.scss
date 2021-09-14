@@ -1,0 +1,64 @@
+.markdown-preview-view {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: block;
+    margin-bottom: 20px;
+    align-items: center;
+    font-family: font(family, primary);
+    font-weight: 600;
+    line-height: font(lineheight, regular);
+    white-space: pre-wrap;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: font(size, 5xtra-large);
+    color: color(title, h1);
+  }
+
+  h2 {
+    margin-top: 80px;
+    color: color(title, h2);
+    font-size: font(size, 4xtra-large);
+  }
+
+  h3 {
+    margin-top: 40px;
+    color: color(title, h3);
+    font-size: font(size, 3xtra-large);
+  }
+
+  h4 {
+    margin-top: 40px;
+    color: color(title, h4);
+    font-size: font(size, 2xtra-large);
+  }
+
+  h5 {
+    margin-top: 40px;
+    color: color(title, h5);
+    font-size: font(size, xtra-large);
+  }
+
+  h6 {
+    margin-top: 40px;
+    color: color(title, h6);
+    font-size: font(size, xtra-large);
+  }
+
+  h1,
+  h2 {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid color(primary, 600);
+  }
+
+  .heading-collapse-indicator {
+    color: color(primary, 600);
+  }
+
+}
