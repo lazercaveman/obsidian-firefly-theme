@@ -6,8 +6,7 @@
   h4,
   h5,
   h6 {
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     font-family: font(family, primary);
     font-weight: 600;
     line-height: font(lineheight, regular);
@@ -17,32 +16,44 @@
   }
 
   h1 {
-    color: color(title, h1)
+    font-size: font(size, 5xtra-large);
+    color: color(title, h1);
+    margin-top: 0;
   }
 
   h2 {
+    font-size: font(size, 4xtra-large);
+    margin-top: 80px;
     color: color(title, h2)
   }
 
   h3 {
+    font-size: font(size, 3xtra-large);
+    margin-top: 40px;
     color: color(title, h3)
   }
 
   h4 {
+    font-size: font(size, 2xtra-large);
+    margin-top: 40px;
     color: color(title, h4)
   }
 
   h5 {
+    font-size: font(size, xtra-large);
+    margin-top: 40px;
     color: color(title, h5)
   }
 
   h6 {
+    font-size: font(size, xtra-large);
+    margin-top: 40px;
     color: color(title, h6)
   }
 
   h1,
   h2 {
-    padding-bottom: 0.3em;
+    padding-bottom: 0.5em;
     border-bottom: 1px solid color(primary, 600);
   }
 
@@ -51,9 +62,16 @@
   }
 
   p {
+    font-weight: 400;
     font-family: font(family, primary);
     font-size: font(size, large);
     color: color(text, paragraph);
+
+    strong {
+      font-weight: 400;
+      color: color(text, strong);
+      filter: drop-shadow(0 0 3px color(text, paragraph));
+    }
   }
 
   .tag {
@@ -106,7 +124,7 @@
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 20px;
-    background-color: color(primary, 1000);
+    background-color: color(primary, 1100)!important;
     font-family: font(family, secondary);
     font-weight: 500;
     line-height: font(lineheight, regular);
@@ -152,4 +170,8 @@
     }
   }
 
+}
+
+iframe {
+  margin: 40px 0;
 }

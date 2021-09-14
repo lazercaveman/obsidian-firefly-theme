@@ -18,7 +18,7 @@ $colors: (
     h2: #82aaff,
     h3: #6be399,
     h4: #ff79c6,
-    h5: #8bcafd,
+    h5: #f9fd8b,
     h6: #c5e478,
   ),
   element: (
@@ -27,7 +27,7 @@ $colors: (
     border-light: #484e6d,
   ),
   text: (
-    strong: #ff98a4,
+    strong: #ebeff7,
     code: #6be399,
     paragraph: #c0cdf3,
     quote: #a1acce,
@@ -39,6 +39,56 @@ $colors: (
 
 .theme-dark {
   @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --color-#{$color}-#{$shade}: #{$value};
+    }
+  }
+}
+
+
+$colorsLight: (
+  primary: (
+    100: #959ab9,
+    200: #ffffff,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #f0f1f5,
+    1000: #f0f1f5,
+    1100: #f0f1f5,
+  ),
+  title: (
+    h1: #ff4683,
+    h2: #598bf7,
+    h3: #48e484,
+    h4: #fb49ae,
+    h5: #63b9ff,
+    h6: #b4da54,
+  ),
+  element: (
+    icon: #1f212f,
+    border: #fff,
+    border-light: #fff,
+  ),
+  effect: (
+    textGlow: #ff98a4,
+  ),
+  text: (
+    strong: #ff98a4,
+    code: #6be399,
+    paragraph: #1f212f,
+    quote: #484e6d,
+    link: #67a0fb,
+    linkUrl: #e1e2eb,
+    hash-tag: #5d648c,
+  ),
+);
+
+.theme-light {
+  @each $color, $shades in $colorsLight {
     @each $shade, $value in $shades {
       --color-#{$color}-#{$shade}: #{$value};
     }
