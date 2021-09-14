@@ -1,0 +1,49 @@
+.markdown-preview-view {
+
+  p {
+    font-weight: 400;
+    font-family: font(family, primary);
+    font-size: font(size, large);
+    color: color(text, paragraph);
+
+    strong {
+      font-weight: 400;
+      color: color(text, strong);
+      filter: drop-shadow(0 0 3px color(text, paragraph));
+    }
+  }
+
+  a {
+    color: color(text, link);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.external-link {
+      padding-right: 20px;
+    }
+
+    &.internal-link {
+      text-decoration: none;
+      color: color(text, link);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  blockquote {
+    margin-left: 20px;
+    padding: 20px;
+    border: unset;
+    border-left: 3px solid color(primary, 500);
+    font-style: italic;
+    p {
+      color: color(text, quote);
+    }
+  }
+
+}
