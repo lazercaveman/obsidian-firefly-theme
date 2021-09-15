@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [1.0.3] - 15.09.2021
 ### Added
 - Styling for inline-code-blocks
+- Styling for HTML-Code within editor mode
 - Customized styling of right sidebar and related content
 ### Changed
 - Updated Colors of h1 and h2 to be more consistent according to colors of other headlines
