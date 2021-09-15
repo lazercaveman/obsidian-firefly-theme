@@ -23,6 +23,7 @@ $colors: (
   ),
   element: (
     icon: #adb9db,
+    icon-hover: #ebeff7,
     border: #0a0b0f,
     border-light: #484e6d,
     ordered-list-indicator: #ebeff7,
@@ -37,7 +38,8 @@ $colors: (
     inline-code: #00C9A7,
     paragraph: #c0cdf3,
     quote: #a1acce,
-    link: #67a0fb,
+    quote-border: #a1acce,
+    link: #00bfff,
     linkUrl: #555555,
     hash-tag: #adb9db,
   ),
