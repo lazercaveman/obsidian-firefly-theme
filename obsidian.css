@@ -22,9 +22,9 @@
   --color-element-border-light: #484e6d;
   --color-element-ordered-list-indicator: #ebeff7;
   --color-element-unordered-list-indicator: #ebeff7;
-  --color-element-markup-tags: #555555;
-  --color-element-markup-attribute: #555555;
-  --color-element-markup-attribute-value: #555555;
+  --color-element-markup-tags: #FFC75F;
+  --color-element-markup-attribute: #00C9A7;
+  --color-element-markup-attribute-value: #ebeff7;
   --color-text-strong: #ebeff7;
   --color-text-code: #00C9A7;
   --color-text-inline-code: #00C9A7;
@@ -134,11 +134,13 @@
 }
 
 .cm-s-obsidian {
-  color: var(--color-text-paragraph);
   font-family: var(--color-family-secondary);
   font-size: var(--color-size-regular);
   font-weight: 500;
   line-height: var(--color-lineheight-regular);
+}
+.cm-s-obsidian .CodeMirror-line {
+  color: var(--color-text-paragraph);
 }
 .cm-s-obsidian .cm-em,
 .cm-s-obsidian .cm-strong {
