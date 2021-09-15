@@ -33,7 +33,7 @@
   --color-text-quote-border: #a1acce;
   --color-text-link: #00bfff;
   --color-text-linkUrl: #555555;
-  --color-text-hash-tag: #adb9db;
+  --color-text-hash-tag: #00C9A7;
 }
 
 .theme-light {
@@ -419,6 +419,25 @@ svg {
   display: none;
 }
 
+.search-result .search-result-file-title {
+  color: var(--color-text-paragraph);
+}
+.search-result .tree-item-flair-outer span {
+  margin-right: 7px;
+  color: var(--color-text-hash-tag);
+  background: var(--color-primary-1100);
+}
+.search-result .search-result-file-match {
+  color: var(--color-text-quote);
+  background: var(--color-primary-1100);
+}
+.search-result .search-result-file-matched-text {
+  padding: 1px 5px;
+  color: var(--color-primary-1100);
+  background-color: var(--color-text-hash-tag);
+  border-radius: 5px;
+}
+
 .nav-header {
   margin: 10px;
   padding: 0;
@@ -506,7 +525,7 @@ svg {
 }
 
 .tag-pane-tag-count {
-  color: var(--color-text-code);
+  color: var(--color-text-hash-tag);
   background-color: var(--color-primary-1100);
 }
 
