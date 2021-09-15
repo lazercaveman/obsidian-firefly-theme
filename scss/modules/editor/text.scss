@@ -1,0 +1,32 @@
+.cm-s-obsidian {
+  color: color(text, paragraph);
+  font-family: font(family, secondary);
+  font-size: font(size, regular);
+  font-weight: 500;
+  line-height: font(lineheight, regular);
+
+  .cm-em,
+  .cm-strong {
+    color: color(text, strong);
+  }
+
+  .cm-formatting-link,
+  .cm-link {
+    color: color(text, link)!important;
+  }
+
+  .cm-formatting-link-string,
+  .cm-url {
+    color: color(text, linkUrl)!important;
+  }
+
+  span.cm-quote {
+    margin-left: 20px;
+    color: color(text, quote);
+    font-style: italic;
+    &.cm-formatting{
+      color: color(primary, 100);
+    }
+  }
+}
+

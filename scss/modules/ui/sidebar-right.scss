@@ -1,0 +1,27 @@
+.view-content {
+
+  .workspace-leaf-content .view-content {
+
+    .tree-item {
+
+    }
+
+  }
+
+  .tree-item-inner {
+    color: color(text, paragraph);
+  }
+
+}
+
+.tag-pane-tag-text {
+  color: color(text, paragraph);
+  &:before {
+    content: '# '
+  }
+}
+
+.tag-pane-tag-count {
+  color: color(text, code);
+  background-color: color(primary, 1100)
+}

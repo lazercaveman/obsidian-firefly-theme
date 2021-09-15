@@ -43,18 +43,37 @@ svg {
   display: none;
 }
 
-.workspace-tab-header-container {
-  margin-top: 4px;
-  margin-left: 4px;
-  height: fit-content;
-}
-
 .nav-header {
+  margin: 10px;
+  padding: 0;
   .nav-buttons-container {
     justify-content: flex-start;
+    gap: 10px;
+    margin-top: 12px;
   }
   .nav-action-button {
-    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid color(primary, 1100);
+    background: color(primary, 1100);
+    border-radius: 50%;
+    transition: background-color .2s ease;
+
+    &:hover {
+      background-color: #000;
+      svg {
+        color: color(element, icon-hover);
+      }
+    }
+    svg {
+      margin: 0;
+      padding: 0;
+      transition: color .2s ease;
+    }
   }
 }
 
@@ -67,27 +86,39 @@ svg {
   background-color: color(primary, 1100);
 }
 
-.workspace-tab-header {
-  background-color: transparent;
-  border-radius: 10px;
-}
+.workspace-tab-header-container {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: fit-content;
 
-.workspace-tab-header-inner {
-  padding: 10px;
-  background-color: color(primary, 800);
-  border-radius: 10px;
-}
+  .workspace-tab-header {
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
 
-.workspace-tab-header-inner-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    &.is-active {
+      background-color: color(primary, 800);
+      border-radius: 10px;
+    }
+  }
 
-.workspace-tab-header.is-before-active,
-.workspace-tab-header.is-after-active {
-  background-color: transparent;
+  .workspace-tab-header-inner {
+    padding: 10px;
+  }
+
+  .workspace-tab-header-inner-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .workspace-tab-header.is-before-active,
+  .workspace-tab-header.is-after-active,
   .workspace-tab-header-inner {
     background-color: transparent;
+    .workspace-tab-header-inner {
+      background-color: transparent;
+    }
   }
+
 }

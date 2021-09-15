@@ -16,4 +16,11 @@
       background-color: unset!important;
     }
   }
+
+  p code {
+    padding: 3px 10px;
+    color: color(text, inline-code);
+    background-color: color(primary, 1100)!important;
+    border-radius: 5px;
+  }
 }

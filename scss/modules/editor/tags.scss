@@ -1,0 +1,13 @@
+.cm-s-obsidian {
+
+  span.cm-hashtag {
+    padding: 5px;
+    color: color(text, hash-tag);
+    background-color: color(primary, 900);
+    font-size: font(size, regular);
+    &.cm-formatting{
+      color: color(primary, 100);
+    }
+  }
+
+}
