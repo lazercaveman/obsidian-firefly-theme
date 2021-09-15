@@ -43,6 +43,32 @@ svg {
   display: none;
 }
 
+.search-result {
+
+  .search-result-file-title {
+    color: color(text, paragraph)
+  }
+
+  .tree-item-flair-outer span {
+    margin-right: 7px;
+    color: color(text, hash-tag);
+    background: color(primary, 1100);
+  }
+
+  .search-result-file-match {
+    color: color(text, quote);
+    background: color(primary, 1100);
+  }
+
+  .search-result-file-matched-text {
+    padding: 1px 5px;
+    color: color(primary, 1100);
+    background-color: color(text, hash-tag);
+    border-radius: 5px;
+  }
+
+}
+
 .nav-header {
   margin: 10px;
   padding: 0;
