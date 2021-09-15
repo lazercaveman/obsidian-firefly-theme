@@ -494,6 +494,22 @@ svg {
   background-color: transparent;
 }
 
+.view-content .tree-item-inner {
+  color: var(--color-text-paragraph);
+}
+
+.tag-pane-tag-text {
+  color: var(--color-text-paragraph);
+}
+.tag-pane-tag-text:before {
+  content: "# ";
+}
+
+.tag-pane-tag-count {
+  color: var(--color-text-code);
+  background-color: var(--color-primary-1100);
+}
+
 .titlebar {
   background-color: var(--color-primary-1000);
 }

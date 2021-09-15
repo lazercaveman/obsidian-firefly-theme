@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [unreleased] - 10.09.2021
 ### Added
 - Styling for inline-code-blocks
+- Customized styling of right sidebar and related content
 ### Changed
 - Updated Colors of h1 and h2 to be more consistent according to colors of other headlines
 - Updated Colors of anker Tags to be moire visible
