@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Updated Colors of anker Tags to be more visible
 - Updated Colors of hash-tags to be more visible 
 - Adjusted positioning and dimendions of nav-header and contained items
+- Adjusted UI colors and border-colors
 ### Fixed
 - Nav-Header items where visualized as active, when they wherent.
 

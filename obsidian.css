@@ -257,7 +257,7 @@
 }
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
-  padding-bottom: 0.5em;
+  padding-bottom: 5px;
   border-bottom: 1px solid var(--color-primary-600);
 }
 .markdown-preview-view .heading-collapse-indicator {
@@ -542,7 +542,7 @@ svg {
 .workspace-split,
 .workspace-ribbon,
 .workspace-ribbon.mod-left.is-collapsed {
-  border-right: 1px solid var(--color-primary-1000);
+  border-right: 1px solid var(--color-element-border);
 }
 
 .workspace-ribbon.mod-right.is-collapsed {
@@ -576,7 +576,7 @@ svg {
 
 .status-bar {
   color: var(--color-text-quote);
-  border-top: 1px solid var(--color-primary-1000);
+  border-top: 1px solid var(--color-primary-900);
 }
 
 .workspace-split.mod-root .view-content, .workspace-split.mod-root .CodeMirror-gutter {
@@ -589,7 +589,7 @@ svg {
 
 .workspace-leaf .view-header {
   background-color: var(--color-primary-900);
-  border: 1px solid var(--color-element-border);
+  border: none;
 }
 .workspace-leaf .view-header .view-header-title {
   color: var(--color-element-icon);
