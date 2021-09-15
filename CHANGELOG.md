@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [unreleased] - 10.09.2021
+## [1.0.3] - 10.09.2021
 ### Added
 - Styling for inline-code-blocks
 - Customized styling of right sidebar and related content
