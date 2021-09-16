@@ -342,7 +342,7 @@
 }
 .markdown-preview-view pre code {
   color: var(--color-text-code);
-  line-height: var(--color-lineheight-xtra-large) !important;
+  line-height: var(--color-lineheight-large) !important;
   font-size: var(--color-size-regular);
   background-color: unset !important;
 }
