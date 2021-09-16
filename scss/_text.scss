@@ -1,14 +1,3 @@
-:root {
-  --font-editor-size: 1em;
-  --font-editor-linenumbers-size: medium;
-  --font-math-preview-size: 1.126em;
-  --font-tag-preview-size: 0.9em;
-  --font-hover-preview-size: 0.9em;
-  --font-prompts-size: 0.875em;
-  --font-todoist-title-size: 1em;
-  --font-todoist-metadata-size: small;
-}
-
 $primaryFont: "Inter", sans-serif;
 $secondaryFont: "Jetbrains Mono", monospace;
 
@@ -19,14 +8,13 @@ $fonts: (
   ),
   size: (
     xtra-small: .75rem,
-    small: .95rem,
-    regular: 1rem,
+    small: 1rem,
+    regular: 1.15rem,
     large: 1.25rem,
-    xtra-large: 1.25rem,
-    2xtra-large: 1.5rem,
-    3xtra-large: 1.75rem,
-    4xtra-large: 2rem,
-    5xtra-large: 2.25rem,
+    xtra-large: 1.5rem,
+    2xtra-large: 1.75rem,
+    3xtra-large: 2rem,
+    4xtra-large: 2.25rem,
   ),
   lineheight: (
     min: 1em,

@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [undefined] - 00.00.0000
+### Added
+### Changed
+- Adjusted preview-texts line-height from default to 1.75rem.
+- Adjusted preview-texts font-size from 1.25rem to 1.15rem
+- Slightly adjusted headline-colors
+### Fixed
+- Scss map items of font.size.large and font.size.xtra-large had the same value, which is fixed now.
+
 ## [1.0.3] - 15.09.2021
 ### Added
 - Styling for inline-code-blocks
