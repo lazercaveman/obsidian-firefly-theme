@@ -10,12 +10,18 @@
   --color-primary-900: #15161f;
   --color-primary-1000: #0a0b0f;
   --color-primary-1100: #050608;
-  --color-title-h1: #9f73e6;
-  --color-title-h2: #ec68c5;
-  --color-title-h3: #FF6F91;
-  --color-title-h4: #FF9671;
-  --color-title-h5: #FFC75F;
+  --color-title-h1: #95ff6fc3;
+  --color-title-h2: #95ff6fc3;
+  --color-title-h3: #95ff6fc3;
+  --color-title-h4: #95ff6fc3;
+  --color-title-h5: #95ff6fc3;
   --color-title-h6: #c0cdf3;
+  --color-editor-title-h1: #845EC2;
+  --color-editor-title-h2: #D65DB1;
+  --color-editor-title-h3: #FF6F91;
+  --color-editor-title-h4: #FF9671;
+  --color-editor-title-h5: #FFC75F;
+  --color-editor-title-h6: #c0cdf3;
   --color-element-icon: #adb9db;
   --color-element-icon-hover: #ebeff7;
   --color-element-border: #0a0b0f;
@@ -23,18 +29,19 @@
   --color-element-ordered-list-indicator: #ebeff7;
   --color-element-unordered-list-indicator: #ebeff7;
   --color-element-markup-tags: #FFC75F;
-  --color-element-markup-attribute: #00C9A7;
+  --color-element-markup-attribute: #95ff6f;
   --color-element-markup-attribute-value: #ebeff7;
+  --color-text-paragraph: #c0cdf3;
   --color-text-strong: #ebeff7;
   --color-text-code: #00C9A7;
   --color-text-inline-code: #00C9A7;
   --color-text-code-background: #050608;
-  --color-text-paragraph: #c0cdf3;
   --color-text-quote: #a1acce;
-  --color-text-quote-border: #a1acce;
+  --color-text-quote-border: #464e62;
   --color-text-link: #00bfff;
   --color-text-linkUrl: #555555;
-  --color-text-hash-tag: #00C9A7;
+  --color-text-note-indicator: #FF6F91;
+  --color-text-hash-tag: #95ff6f;
 }
 
 .theme-light {
@@ -99,27 +106,27 @@
 }
 
 .cm-header-1 {
-  color: var(--color-title-h1);
+  color: var(--color-editor-title-h1);
 }
 
 .cm-header-2 {
-  color: var(--color-title-h2);
+  color: var(--color-editor-title-h2);
 }
 
 .cm-header-3 {
-  color: var(--color-title-h3);
+  color: var(--color-editor-title-h3);
 }
 
 .cm-header-4 {
-  color: var(--color-title-h4);
+  color: var(--color-editor-title-h4);
 }
 
 .cm-header-5 {
-  color: var(--color-title-h5);
+  color: var(--color-editor-title-h5);
 }
 
 .cm-header-6 {
-  color: var(--color-title-h6);
+  color: var(--color-editor-title-h6);
 }
 
 .cm-s-obsidian {
@@ -167,7 +174,7 @@
 }
 .cm-s-obsidian span.cm-inline-code {
   padding: 0.2em;
-  color: var(--color-text-code);
+  color: var(--color-text-inline-code);
 }
 .cm-s-obsidian span.cm-tag {
   color: var(--color-element-markup-tags);
@@ -286,10 +293,10 @@
   text-decoration: underline;
 }
 .markdown-preview-view blockquote {
-  margin: 40px 20px;
-  padding-left: 40px;
+  margin: 20px;
+  padding: 5px 20px;
   border: unset;
-  border-left: 3px solid var(--color-text-quote-border);
+  border-left: 1px solid var(--color-primary-400);
   font-style: italic;
 }
 .markdown-preview-view blockquote p {
@@ -339,6 +346,22 @@
   font-weight: 500;
   line-height: var(--color-lineheight-regular);
   border-radius: 5px;
+}
+.markdown-preview-view pre.language-_note {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--color-primary-700) !important;
+  box-shadow: 0 0 20px var(--color-primary-900);
+}
+.markdown-preview-view pre.language-_note code {
+  white-space: initial;
+}
+.markdown-preview-view pre.language-_note code:before {
+  content: "#Note: ";
+  color: var(--color-text-note-indicator);
+  filter: drop-shadow(0 0 5px #000);
+  font-size: var(--color-size-large);
+  font-weight: 600;
 }
 .markdown-preview-view pre code {
   color: var(--color-text-code);

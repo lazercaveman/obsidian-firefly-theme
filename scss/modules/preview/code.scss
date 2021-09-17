@@ -1,5 +1,6 @@
 .markdown-preview-view {
 
+  // TODO: style code for each common language
   pre {
     margin: 40px 0!important;
     padding: 20px;
@@ -8,6 +9,23 @@
     font-weight: 500;
     line-height: font(lineheight, regular);
     border-radius: 5px;
+    &.language-_note {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: color(primary, 700)!important;
+      box-shadow: 0 0 20px color(primary, 900);
+      code {
+        white-space: initial;
+        &:before {
+          content:'#Note: ';
+          color: color(text, note-indicator);
+          filter: drop-shadow(0 0 5px #000);
+          font-size: font(size, large);
+          font-weight: 600;
+        }
+      }
+    }
+
     code {
       color: color(text, code);
       line-height: font(lineheight, large)!important;
