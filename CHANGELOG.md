@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 17.09.2021
+### Added
+- "Code-Style-Tags" can be used within double tripple backtigs (which are usually used to mark code-blocks) - instead of adding a programminglanguage one can add "Code-Style-Tags", which will trigger specific styles e.g. to make special notes, etc.
+- Using the **Code-Style-Tag of _notes** tag will provide a note box with drop shadow (preview mode), in which notes will be marked as such and highlighted.
+### Changed
+- Adjusted preview-texts line-height from default to 1.75rem.
+- Adjusted preview-texts font-size from 1.25rem to 1.15rem
+- Slightly adjusted headline-colors
+### Fixed
+- Scss map items of font.size.large and font.size.xtra-large had the same value, which is fixed now.
+
 ## [1.0.3] - 15.09.2021
 ### Added
 - Styling for inline-code-blocks

@@ -1,10 +1,11 @@
 .markdown-preview-view {
 
   p {
+    color: color(text, paragraph);
     font-weight: 400;
     font-family: font(family, primary);
-    font-size: font(size, large);
-    color: color(text, paragraph);
+    font-size: font(size, regular);
+    line-height: font(lineheight, large);
 
     strong {
       font-weight: 400;
@@ -36,10 +37,10 @@
   }
 
   blockquote {
-    margin: 40px 20px;
-    padding-left: 40px;
+    margin: 20px;
+    padding: 5px 20px;
     border: unset;
-    border-left: 3px solid color(text, quote-border);
+    border-left: 1px solid color(primary, 400);
     font-style: italic;
     p {
       color: color(text, quote);

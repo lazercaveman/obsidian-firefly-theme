@@ -1,4 +1,3 @@
-
 $colors: (
   primary: (
     100: #676f9b,
@@ -14,6 +13,14 @@ $colors: (
     1100: #050608,
   ),
   title: (
+    h1: #95ff6fc3,
+    h2: #95ff6fc3,
+    h3: #95ff6fc3,
+    h4: #95ff6fc3,
+    h5: #95ff6fc3,
+    h6: #c0cdf3,
+  ),
+  editor-title: (
     h1: #845EC2,
     h2: #D65DB1,
     h3: #FF6F91,
@@ -28,21 +35,22 @@ $colors: (
     border-light: #484e6d,
     ordered-list-indicator: #ebeff7,
     unordered-list-indicator: #ebeff7,
-
     markup-tags: #FFC75F,
-    markup-attribute: #00C9A7,
+    markup-attribute: #95ff6f,
     markup-attribute-value: #ebeff7,
   ),
   text: (
+    paragraph: #c0cdf3,
     strong: #ebeff7,
     code: #00C9A7,
     inline-code: #00C9A7,
-    paragraph: #c0cdf3,
+    code-background: #050608,
     quote: #a1acce,
-    quote-border: #a1acce,
+    quote-border: #464e62,
     link: #00bfff,
     linkUrl: #555555,
-    hash-tag: #00C9A7,
+    note-indicator: #FF6F91,
+    hash-tag: #95ff6f,
   ),
 );
 
@@ -53,7 +61,6 @@ $colors: (
     }
   }
 }
-
 
 $colorsLight: (
   primary: (

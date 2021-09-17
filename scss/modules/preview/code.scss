@@ -1,26 +1,43 @@
 .markdown-preview-view {
 
-  // TODO: set colors as like the vscode default Dark+ theme
+  // TODO: style code for each common language
   pre {
     margin: 40px 0!important;
     padding: 20px;
-    background-color: color(primary, 1100)!important;
+    background-color: color(text, code-background)!important;
     font-family: font(family, secondary);
     font-weight: 500;
     line-height: font(lineheight, regular);
     border-radius: 5px;
+    &.language-_note {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: color(primary, 700)!important;
+      box-shadow: 0 0 20px color(primary, 900);
+      code {
+        white-space: initial;
+        &:before {
+          content:'#Note: ';
+          color: color(text, note-indicator);
+          filter: drop-shadow(0 0 5px #000);
+          font-size: font(size, large);
+          font-weight: 600;
+        }
+      }
+    }
+
     code {
       color: color(text, code);
-      line-height: font(lineheight, xtra-large)!important;
+      line-height: font(lineheight, large)!important;
       font-size: font(size, regular);
       background-color: unset!important;
     }
   }
 
   p code {
-    padding: 3px 10px;
+    padding: .2em 10px;
     color: color(text, inline-code);
-    background-color: color(primary, 1100)!important;
+    background-color: color(text, code-background)!important;
     border-radius: 5px;
   }
 }

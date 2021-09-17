@@ -10,12 +10,18 @@
   --color-primary-900: #15161f;
   --color-primary-1000: #0a0b0f;
   --color-primary-1100: #050608;
-  --color-title-h1: #845EC2;
-  --color-title-h2: #D65DB1;
-  --color-title-h3: #FF6F91;
-  --color-title-h4: #FF9671;
-  --color-title-h5: #FFC75F;
+  --color-title-h1: #95ff6fc3;
+  --color-title-h2: #95ff6fc3;
+  --color-title-h3: #95ff6fc3;
+  --color-title-h4: #95ff6fc3;
+  --color-title-h5: #95ff6fc3;
   --color-title-h6: #c0cdf3;
+  --color-editor-title-h1: #845EC2;
+  --color-editor-title-h2: #D65DB1;
+  --color-editor-title-h3: #FF6F91;
+  --color-editor-title-h4: #FF9671;
+  --color-editor-title-h5: #FFC75F;
+  --color-editor-title-h6: #c0cdf3;
   --color-element-icon: #adb9db;
   --color-element-icon-hover: #ebeff7;
   --color-element-border: #0a0b0f;
@@ -23,17 +29,19 @@
   --color-element-ordered-list-indicator: #ebeff7;
   --color-element-unordered-list-indicator: #ebeff7;
   --color-element-markup-tags: #FFC75F;
-  --color-element-markup-attribute: #00C9A7;
+  --color-element-markup-attribute: #95ff6f;
   --color-element-markup-attribute-value: #ebeff7;
+  --color-text-paragraph: #c0cdf3;
   --color-text-strong: #ebeff7;
   --color-text-code: #00C9A7;
   --color-text-inline-code: #00C9A7;
-  --color-text-paragraph: #c0cdf3;
+  --color-text-code-background: #050608;
   --color-text-quote: #a1acce;
-  --color-text-quote-border: #a1acce;
+  --color-text-quote-border: #464e62;
   --color-text-link: #00bfff;
   --color-text-linkUrl: #555555;
-  --color-text-hash-tag: #00C9A7;
+  --color-text-note-indicator: #FF6F91;
+  --color-text-hash-tag: #95ff6f;
 }
 
 .theme-light {
@@ -68,28 +76,16 @@
 }
 
 :root {
-  --font-editor-size: 1em;
-  --font-editor-linenumbers-size: medium;
-  --font-math-preview-size: 1.126em;
-  --font-tag-preview-size: 0.9em;
-  --font-hover-preview-size: 0.9em;
-  --font-prompts-size: 0.875em;
-  --font-todoist-title-size: 1em;
-  --font-todoist-metadata-size: small;
-}
-
-:root {
   --color-family-primary: Inter, sans-serif;
   --color-family-secondary: Jetbrains Mono, monospace;
   --color-size-xtra-small: 0.75rem;
-  --color-size-small: 0.95rem;
-  --color-size-regular: 1rem;
+  --color-size-small: 1rem;
+  --color-size-regular: 1.15rem;
   --color-size-large: 1.25rem;
-  --color-size-xtra-large: 1.25rem;
-  --color-size-2xtra-large: 1.5rem;
-  --color-size-3xtra-large: 1.75rem;
-  --color-size-4xtra-large: 2rem;
-  --color-size-5xtra-large: 2.25rem;
+  --color-size-xtra-large: 1.5rem;
+  --color-size-2xtra-large: 1.75rem;
+  --color-size-3xtra-large: 2rem;
+  --color-size-4xtra-large: 2.25rem;
   --color-lineheight-min: 1em;
   --color-lineheight-medium: 1.5em;
   --color-lineheight-regular: 1.75em;
@@ -110,34 +106,34 @@
 }
 
 .cm-header-1 {
-  color: var(--color-title-h1);
+  color: var(--color-editor-title-h1);
 }
 
 .cm-header-2 {
-  color: var(--color-title-h2);
+  color: var(--color-editor-title-h2);
 }
 
 .cm-header-3 {
-  color: var(--color-title-h3);
+  color: var(--color-editor-title-h3);
 }
 
 .cm-header-4 {
-  color: var(--color-title-h4);
+  color: var(--color-editor-title-h4);
 }
 
 .cm-header-5 {
-  color: var(--color-title-h5);
+  color: var(--color-editor-title-h5);
 }
 
 .cm-header-6 {
-  color: var(--color-title-h6);
+  color: var(--color-editor-title-h6);
 }
 
 .cm-s-obsidian {
   font-family: var(--color-family-secondary);
-  font-size: var(--color-size-regular);
-  font-weight: 500;
+  font-size: var(--color-size-small);
   line-height: var(--color-lineheight-regular);
+  font-weight: 500;
 }
 .cm-s-obsidian .CodeMirror-line {
   color: var(--color-text-paragraph);
@@ -177,7 +173,8 @@
   font-size: var(--color-size-regular);
 }
 .cm-s-obsidian span.cm-inline-code {
-  color: var(--color-text-code);
+  padding: 0.2em;
+  color: var(--color-text-inline-code);
 }
 .cm-s-obsidian span.cm-tag {
   color: var(--color-element-markup-tags);
@@ -229,33 +226,33 @@
   white-space: pre-wrap;
 }
 .markdown-preview-view h1 {
-  font-size: var(--color-size-5xtra-large);
+  font-size: var(--color-size-4xtra-large);
   color: var(--color-title-h1);
 }
 .markdown-preview-view h2 {
   margin-top: 80px;
   color: var(--color-title-h2);
-  font-size: var(--color-size-4xtra-large);
+  font-size: var(--color-size-3xtra-large);
 }
 .markdown-preview-view h3 {
   margin-top: 40px;
   color: var(--color-title-h3);
-  font-size: var(--color-size-3xtra-large);
+  font-size: var(--color-size-2xtra-large);
 }
 .markdown-preview-view h4 {
   margin-top: 40px;
   color: var(--color-title-h4);
-  font-size: var(--color-size-2xtra-large);
+  font-size: var(--color-size-xtra-large);
 }
 .markdown-preview-view h5 {
   margin-top: 40px;
   color: var(--color-title-h5);
-  font-size: var(--color-size-xtra-large);
+  font-size: var(--color-size-large);
 }
 .markdown-preview-view h6 {
   margin-top: 40px;
   color: var(--color-title-h6);
-  font-size: var(--color-size-xtra-large);
+  font-size: var(--color-size-large);
 }
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
@@ -267,10 +264,11 @@
 }
 
 .markdown-preview-view p {
+  color: var(--color-text-paragraph);
   font-weight: 400;
   font-family: var(--color-family-primary);
-  font-size: var(--color-size-large);
-  color: var(--color-text-paragraph);
+  font-size: var(--color-size-regular);
+  line-height: var(--color-lineheight-large);
 }
 .markdown-preview-view p strong {
   font-weight: 400;
@@ -295,10 +293,10 @@
   text-decoration: underline;
 }
 .markdown-preview-view blockquote {
-  margin: 40px 20px;
-  padding-left: 40px;
+  margin: 20px;
+  padding: 5px 20px;
   border: unset;
-  border-left: 3px solid var(--color-text-quote-border);
+  border-left: 1px solid var(--color-primary-400);
   font-style: italic;
 }
 .markdown-preview-view blockquote p {
@@ -319,6 +317,7 @@
   margin: 5px 0;
   color: var(--color-text-paragraph);
   font-size: var(--color-size-large);
+  line-height: var(--color-lineheight-regular);
 }
 .markdown-preview-view ul li {
   padding-left: 10px;
@@ -342,22 +341,38 @@
 .markdown-preview-view pre {
   margin: 40px 0 !important;
   padding: 20px;
-  background-color: var(--color-primary-1100) !important;
+  background-color: var(--color-text-code-background) !important;
   font-family: var(--color-family-secondary);
   font-weight: 500;
   line-height: var(--color-lineheight-regular);
   border-radius: 5px;
 }
+.markdown-preview-view pre.language-_note {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--color-primary-700) !important;
+  box-shadow: 0 0 20px var(--color-primary-900);
+}
+.markdown-preview-view pre.language-_note code {
+  white-space: initial;
+}
+.markdown-preview-view pre.language-_note code:before {
+  content: "#Note: ";
+  color: var(--color-text-note-indicator);
+  filter: drop-shadow(0 0 5px #000);
+  font-size: var(--color-size-large);
+  font-weight: 600;
+}
 .markdown-preview-view pre code {
   color: var(--color-text-code);
-  line-height: var(--color-lineheight-xtra-large) !important;
+  line-height: var(--color-lineheight-large) !important;
   font-size: var(--color-size-regular);
   background-color: unset !important;
 }
 .markdown-preview-view p code {
-  padding: 3px 10px;
+  padding: 0.2em 10px;
   color: var(--color-text-inline-code);
-  background-color: var(--color-primary-1100) !important;
+  background-color: var(--color-text-code-background) !important;
   border-radius: 5px;
 }
 
@@ -366,7 +381,7 @@
   color: var(--color-text-hash-tag);
   background-color: var(--color-primary-1000);
   border-radius: 5px;
-  font-size: var(--color-size-regular);
+  font-size: var(--color-size-small);
   font-weight: 500;
 }
 
