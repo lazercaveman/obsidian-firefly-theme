@@ -26,7 +26,7 @@ Firefly was created to add an Obsidian theme, that has more of the look and feel
 5. Under the Themes section, click on the dropdown menu next to Theme heading.
 6. Select for Firefly and then you're done! 🎉
 
-## 🤖 Specific Theme Features
+### 🤖 Specific Theme Features
 
 ### Code-Style-Tags
 In the Firefly theme it is possible to highlight certain content using certain tags (I'll just call them code-style- tags (cst)). At the moment this is only an idea, which I have implemented rudimentary for now - the usage is of course absolutely optional.
