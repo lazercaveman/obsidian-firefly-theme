@@ -8,7 +8,7 @@ node_modules/
 *.njsproj
 *.sln
 *.sw?
-*.DS_Store
+.DS_Store
 
 # Prevent upload of CSS files but firefly.css (in case this runs directly within obsidian themes folder)
 *.css
