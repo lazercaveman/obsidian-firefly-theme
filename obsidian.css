@@ -397,12 +397,15 @@
   display: none;
 }
 
+
 .nav-file-title.is-active {
+  border-radius: 10px;
   background-color: var(--color-primary-200);
 }
 
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
+  border-radius: 10px;
   background-color: var(--color-primary-400);
 }
 
@@ -422,9 +425,10 @@ svg {
 }
 
 .nav-folder-children > .nav-file,
-.nav-folder-children > .nav-folder {
+/* Directory lines */
+/* .nav-folder-children > .nav-folder {
   border-left: 1px solid var(--color-element-border-light);
-}
+} */
 
 .mod-root > .nav-folder-children > .nav-file,
 .mod-root > .nav-folder-children > .nav-folder {
@@ -473,7 +477,7 @@ svg {
   height: 40px;
   border: 1px solid var(--color-primary-1100);
   background: var(--color-primary-1100);
-  border-radius: 50%;
+  border-radius: 30%; /* 50 */
   transition: background-color 0.2s ease;
 }
 .nav-header .nav-action-button:hover {
@@ -492,7 +496,7 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 5px;
   background-color: var(--color-primary-1100);
 }
