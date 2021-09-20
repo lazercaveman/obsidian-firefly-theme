@@ -1,7 +1,17 @@
 .markdown-preview-view {
 
   iframe {
-    margin: 40px 0;
+    margin: 20px 0;
+  }
+
+  video {
+    margin: 20px 0;
+  }
+
+  .internal-embed, .media-embed {
+    margin: 0;
+    height: auto;
+    line-height: 0;
   }
 
 }

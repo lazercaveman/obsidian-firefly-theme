@@ -34,10 +34,12 @@
     }
   }
 
-  p code {
+  p code,
+  tbody tr td code {
     padding: .2em 10px;
     color: color(text, inline-code);
     background-color: color(text, code-background)!important;
     border-radius: 5px;
   }
+
 }

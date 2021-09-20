@@ -1,0 +1,40 @@
+.markdown-preview-view {
+
+  table {
+    margin: 80px auto;
+    width: 100%;
+    border-radius: 20px;
+  }
+  thead tr  {
+    th {
+      padding: 10px 40px;
+      border: none;
+      color: color(title, h3);
+      background-color: color(primary, 700);
+      &:first-child {
+        border-radius: 20px 0 0 20px;
+      }
+      &:last-child {
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+
+  tbody tr {
+    &:nth-child(even) {
+      background-color: color(primary, 700);
+    }
+    td {
+      padding: 10px 40px;
+      border: none;
+      &:first-child {
+        border-radius: 20px 0 0 20px;
+      }
+      &:last-child {
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+
+
+}

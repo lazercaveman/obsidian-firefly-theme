@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [Unknown] - 00.00.0000
+### Added
+- Added table styling
+### Changed
+### Fixed
+
 ## [1.0.4] - 17.09.2021
 ### Added
 - "Code-Style-Tags" can be used within double tripple backtigs (which are usually used to mark code-blocks) - instead of adding a programminglanguage one can add "Code-Style-Tags", which will trigger specific styles e.g. to make special notes, etc.
