@@ -43,7 +43,7 @@ Using the `_notes` cst, the content inside the tag is highlighted in preview mod
 This theme uses the [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://jetbrains.com/mono) fonts. For the best experience, I recommend installing these fonts onto your local machine.
 
 ## 📦 About this Version
-This is the first version of the Theme, and some stuff may not be implemented yet - it works for me for now. If you miss something feel free to get in touch or even participate if you like.
+This is the first version of the Firefly Theme, and some things may not be implemented yet - it works for me at the moment. If you're missing something, feel free to open up an issue to discuss possible changes.
 
 ## 🥳 Credits
 This theme is inspired and more or less a mix of 
