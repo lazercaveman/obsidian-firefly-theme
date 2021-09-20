@@ -2,11 +2,8 @@
 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
 
-Firefly is a theme for [Obsidian](https://obsidian.md/). The template provides a clean UI and decent color accents (for dark and light theme setup).
-
-![](./firefly-theme-screenshot.png)
-
-Firefly was created to add an Obsidian theme, that has more of the look and feel of a code editor in editor mode, and relies on more extended text formatting in preview mode, to deliver more of a blog ux there. 
+## 📦 About this Version
+This is the first version of the Firefly Theme, and some things may not be implemented yet - it works for me at the moment. If you're missing something, feel free to open up an issue to discuss possible changes.
 
 ## 📥  How-To Install the Firefly Theme into Obsidian
 
@@ -26,6 +23,14 @@ Firefly was created to add an Obsidian theme, that has more of the look and feel
 5. Under the Themes section, click on the dropdown menu next to Theme heading.
 6. Select for Firefly and then you're done! 🎉
 
+## ⚡️ About Firefly Theme
+
+Firefly is a theme for [Obsidian](https://obsidian.md/). The template provides a clean UI and decent color accents (for dark and light theme setup).
+
+![](./firefly-theme-screenshot.png)
+
+Firefly was created to add an Obsidian theme, that has more of the look and feel of a code editor in editor mode, and relies on more extended text formatting in preview mode, to deliver more of a blog ux there. 
+
 ### 🤖 Specific Theme Features
 
 ### Code-Style-Tags
@@ -42,8 +47,6 @@ Using the `_notes` cst, the content inside the tag is highlighted in preview mod
 ## 📓 Typography
 This theme uses the [Inter](https://rsms.me/inter/) and [JetBrains Mono](https://jetbrains.com/mono) fonts. For the best experience, I recommend installing these fonts onto your local machine.
 
-## 📦 About this Version
-This is the first version of the Firefly Theme, and some things may not be implemented yet - it works for me at the moment. If you're missing something, feel free to open up an issue to discuss possible changes.
 
 ## 🥳 Credits
 This theme is inspired and more or less a mix of 
