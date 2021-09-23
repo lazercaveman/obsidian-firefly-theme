@@ -1,10 +1,9 @@
 # Firefly Obsidian Theme
 
-## 📦 About this Version
+## 📦 About this Version 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
 
-This is the first version of the Firefly Theme, and some things may not be implemented yet - it works for me at the moment. **If you're missing something, feel free to open up an issue** to discuss possible changes.
-
+This is is an early version of the Firefly Theme, and some things may not be implemented yet - it works for me at the moment. **If you're missing something, feel free to open up an issue** to discuss possible changes.
 
 ## 📥  How-To Install the Firefly Theme into Obsidian
 
