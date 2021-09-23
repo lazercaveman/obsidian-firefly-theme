@@ -1,15 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unknown] - 00.00.0000
+## [1.0.5] - 23.09.2021
 ### Added
 - Added table styling
 - Added responsive iframes:
   - iframes will take a 100% of the documents width
   - iframes will provide a 16:9 ration
-
-### Changed
-### Fixed
 
 ## [1.0.4] - 17.09.2021
 ### Added
