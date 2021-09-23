@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 ## [Unknown] - 00.00.0000
 ### Added
 - Added table styling
+- Added responsive iframes:
+  - iframes will take a 100% of the documents width
+  - iframes will provide a 16:9 ration
+
 ### Changed
 ### Fixed
 
