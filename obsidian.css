@@ -264,6 +264,7 @@
 }
 
 .markdown-preview-view p {
+  margin: 20px 0;
   color: var(--color-text-paragraph);
   font-weight: 400;
   font-family: var(--color-family-primary);
@@ -278,6 +279,7 @@
 .markdown-preview-view a {
   color: var(--color-text-link);
   text-decoration: none;
+  line-height: 0;
 }
 .markdown-preview-view a:hover {
   text-decoration: underline;
@@ -294,7 +296,6 @@
 }
 .markdown-preview-view blockquote {
   margin: 20px;
-  padding: 5px 20px;
   border: unset;
   border-left: 1px solid var(--color-primary-400);
   font-style: italic;
@@ -338,6 +339,37 @@
   display: inline;
 }
 
+.markdown-preview-view table {
+  margin: 80px auto;
+  width: 100%;
+  border-radius: 20px;
+}
+.markdown-preview-view thead tr th {
+  padding: 10px 40px;
+  border: none;
+  color: var(--color-title-h3);
+  background-color: var(--color-primary-700);
+}
+.markdown-preview-view thead tr th:first-child {
+  border-radius: 20px 0 0 20px;
+}
+.markdown-preview-view thead tr th:last-child {
+  border-radius: 0 20px 20px 0;
+}
+.markdown-preview-view tbody tr:nth-child(even) {
+  background-color: var(--color-primary-700);
+}
+.markdown-preview-view tbody tr td {
+  padding: 10px 40px;
+  border: none;
+}
+.markdown-preview-view tbody tr td:first-child {
+  border-radius: 20px 0 0 20px;
+}
+.markdown-preview-view tbody tr td:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
 .markdown-preview-view pre {
   margin: 40px 0 !important;
   padding: 20px;
@@ -369,7 +401,8 @@
   font-size: var(--color-size-regular);
   background-color: unset !important;
 }
-.markdown-preview-view p code {
+.markdown-preview-view p code,
+.markdown-preview-view tbody tr td code {
   padding: 0.2em 10px;
   color: var(--color-text-inline-code);
   background-color: var(--color-text-code-background) !important;
@@ -386,7 +419,18 @@
 }
 
 .markdown-preview-view iframe {
-  margin: 40px 0;
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+.markdown-preview-view video {
+  margin: 20px 0;
+}
+.markdown-preview-view .internal-embed, .markdown-preview-view .media-embed {
+  margin: 0;
+  height: auto;
+  line-height: 0;
 }
 
 .CodeMirror.cm-s-obsidian.CodeMirror-wrap, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {

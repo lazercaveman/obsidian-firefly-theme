@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 23.09.2021
+### Added
+- Added table styling
+- Added responsive iframes:
+  - iframes will take a 100% of the documents width
+  - iframes will provide a 16:9 ration
+
 ## [1.0.4] - 17.09.2021
 ### Added
 - "Code-Style-Tags" can be used within double tripple backtigs (which are usually used to mark code-blocks) - instead of adding a programminglanguage one can add "Code-Style-Tags", which will trigger specific styles e.g. to make special notes, etc.
