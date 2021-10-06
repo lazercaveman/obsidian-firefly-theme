@@ -7,6 +7,10 @@ All notable changes to this project will be documented in this file.
 - Added responsive iframes:
   - iframes will take a 100% of the documents width
   - iframes will provide a 16:9 ration
+### Fixed
+- Adjusted title colors (since I've been asked if I can go back to the previous state where the title types had different colors)
+- List Items now have same font-size as like other text
+- List Items strong content gets highlighted the same style as like other text
 
 ## [1.0.4] - 17.09.2021
 ### Added
