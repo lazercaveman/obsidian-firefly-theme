@@ -10,17 +10,17 @@
   --color-primary-900: #15161f;
   --color-primary-1000: #0a0b0f;
   --color-primary-1100: #050608;
-  --color-title-h1: #95ff6fc3;
-  --color-title-h2: #95ff6fc3;
-  --color-title-h3: #95ff6fc3;
-  --color-title-h4: #95ff6fc3;
-  --color-title-h5: #95ff6fc3;
+  --color-title-h1: #d16fff;
+  --color-title-h2: #FF6F91;
+  --color-title-h3: #ffb86c;
+  --color-title-h4: #fff06c;
+  --color-title-h5: #c5e478;
   --color-title-h6: #c0cdf3;
-  --color-editor-title-h1: #845EC2;
-  --color-editor-title-h2: #D65DB1;
-  --color-editor-title-h3: #FF6F91;
-  --color-editor-title-h4: #FF9671;
-  --color-editor-title-h5: #FFC75F;
+  --color-editor-title-h1: #d16fff;
+  --color-editor-title-h2: #FF6F91;
+  --color-editor-title-h3: #ffb86c;
+  --color-editor-title-h4: #fff06c;
+  --color-editor-title-h5: #c5e478;
   --color-editor-title-h6: #c0cdf3;
   --color-element-icon: #adb9db;
   --color-element-icon-hover: #ebeff7;
@@ -317,8 +317,14 @@
 .markdown-preview-view ol li {
   margin: 5px 0;
   color: var(--color-text-paragraph);
-  font-size: var(--color-size-large);
+  font-size: var(--color-size-regular);
   line-height: var(--color-lineheight-regular);
+}
+.markdown-preview-view ul li strong,
+.markdown-preview-view ol li strong {
+  font-weight: 400;
+  color: var(--color-text-strong);
+  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
 }
 .markdown-preview-view ul li {
   padding-left: 10px;
