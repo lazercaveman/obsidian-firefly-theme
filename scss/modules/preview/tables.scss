@@ -33,6 +33,11 @@
       &:last-child {
         border-radius: 0 20px 20px 0;
       }
+      strong {
+        font-weight: 400;
+        color: color(text, strong);
+        filter: drop-shadow(0 0 3px color(text, paragraph));
+      }
     }
   }
 

@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - // TODO: Add todays date 
+### Fixed
+- Tables strong content gets highlighted the same style as like other text
+
 ## [1.0.5] - 23.09.2021
 ### Added
 - Added table styling

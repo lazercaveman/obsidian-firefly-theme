@@ -375,6 +375,11 @@
 .markdown-preview-view tbody tr td:last-child {
   border-radius: 0 20px 20px 0;
 }
+.markdown-preview-view tbody tr td strong {
+  font-weight: 400;
+  color: var(--color-text-strong);
+  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
+}
 
 .markdown-preview-view pre {
   margin: 40px 0 !important;
