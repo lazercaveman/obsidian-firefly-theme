@@ -1,10 +1,6 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [1.0.6] - // TODO: Add todays date 
-### Fixed
-- Tables strong content gets highlighted the same style as like other text
-
 ## [1.0.5] - 23.09.2021
 ### Added
 - Added table styling
@@ -15,6 +11,8 @@ All notable changes to this project will be documented in this file.
 - Adjusted title colors (since I've been asked if I can go back to the previous state where the title types had different colors)
 - List Items now have same font-size as like other text
 - List Items strong content gets highlighted the same style as like other text
+- Tables strong content gets highlighted the same style as like other text
+- Menu buttons get highlighted now, when active
 
 ## [1.0.4] - 17.09.2021
 ### Added
