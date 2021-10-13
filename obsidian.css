@@ -10,13 +10,13 @@
   --color-primary-900: #15161f;
   --color-primary-1000: #0a0b0f;
   --color-primary-1100: #050608;
-  --color-title-h1: #d16fff;
+  --color-title-h1: #ff6fcd;
   --color-title-h2: #FF6F91;
   --color-title-h3: #ffb86c;
   --color-title-h4: #fff06c;
   --color-title-h5: #c5e478;
   --color-title-h6: #c0cdf3;
-  --color-editor-title-h1: #d16fff;
+  --color-editor-title-h1: #ff6fcd;
   --color-editor-title-h2: #FF6F91;
   --color-editor-title-h3: #ffb86c;
   --color-editor-title-h4: #fff06c;
@@ -39,8 +39,8 @@
   --color-text-code-background: #050608;
   --color-text-quote: #a1acce;
   --color-text-quote-border: #464e62;
-  --color-text-link: #00EAFF;
-  --color-text-linkUrl: #555555;
+  --color-text-link: #00c4ff;
+  --color-text-linkUrl: #00eaff;
   --color-text-note-indicator: #FF6F91;
   --color-text-hash-tag: #95ff6f;
 }
@@ -231,7 +231,7 @@
   color: var(--color-title-h1);
 }
 .markdown-preview-view h2 {
-  margin-top: 80px;
+  margin-top: 40px;
   color: var(--color-title-h2);
   font-size: var(--color-size-3xtra-large);
 }
@@ -257,8 +257,7 @@
 }
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--color-primary-600);
+  border-bottom: 1px solid var(--color-primary-700);
 }
 .markdown-preview-view .heading-collapse-indicator {
   color: var(--color-primary-600);
