@@ -84,10 +84,17 @@ svg {
     padding: 0;
     width: 40px;
     height: 40px;
-    border: 1px solid color(primary, 1100);
+    border: 5px solid color(primary, 1100);
     background: color(primary, 1100);
     border-radius: 50%;
     transition: background-color .2s ease;
+
+    &.is-active {
+      background-color: color(primary, 800);
+      svg {
+        color: color(element, icon-highlighted);
+      }
+    }
 
     &:hover {
       background-color: #000;

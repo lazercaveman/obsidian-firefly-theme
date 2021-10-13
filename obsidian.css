@@ -24,6 +24,7 @@
   --color-editor-title-h6: #c0cdf3;
   --color-element-icon: #adb9db;
   --color-element-icon-hover: #ebeff7;
+  --color-element-icon-highlighted: #00B1F6;
   --color-element-border: #0a0b0f;
   --color-element-border-light: #484e6d;
   --color-element-ordered-list-indicator: #ebeff7;
@@ -38,7 +39,7 @@
   --color-text-code-background: #050608;
   --color-text-quote: #a1acce;
   --color-text-quote-border: #464e62;
-  --color-text-link: #00bfff;
+  --color-text-link: #00EAFF;
   --color-text-linkUrl: #555555;
   --color-text-note-indicator: #FF6F91;
   --color-text-hash-tag: #95ff6f;
@@ -375,6 +376,11 @@
 .markdown-preview-view tbody tr td:last-child {
   border-radius: 0 20px 20px 0;
 }
+.markdown-preview-view tbody tr td strong {
+  font-weight: 400;
+  color: var(--color-text-strong);
+  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
+}
 
 .markdown-preview-view pre {
   margin: 40px 0 !important;
@@ -521,10 +527,16 @@ svg {
   padding: 0;
   width: 40px;
   height: 40px;
-  border: 1px solid var(--color-primary-1100);
+  border: 5px solid var(--color-primary-1100);
   background: var(--color-primary-1100);
   border-radius: 50%;
   transition: background-color 0.2s ease;
+}
+.nav-header .nav-action-button.is-active {
+  background-color: var(--color-primary-800);
+}
+.nav-header .nav-action-button.is-active svg {
+  color: var(--color-element-icon-highlighted);
 }
 .nav-header .nav-action-button:hover {
   background-color: #000;
