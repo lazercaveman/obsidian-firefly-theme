@@ -143,6 +143,7 @@
 .cm-s-obsidian .cm-strong {
   color: var(--color-text-strong);
 }
+.cm-s-obsidian .cm-hmd-internal-link,
 .cm-s-obsidian .cm-formatting-link,
 .cm-s-obsidian .cm-link {
   color: var(--color-text-link) !important;
