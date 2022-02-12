@@ -21,7 +21,7 @@
   }
 
   h2 {
-    margin-top: 80px;
+    margin-top: 40px;
     color: color(title, h2);
     font-size: font(size, 3xtra-large);
   }
@@ -52,8 +52,7 @@
 
   h1,
   h2 {
-    padding-bottom: 5px;
-    border-bottom: 1px solid color(primary, 600);
+    border-bottom: 1px solid color(primary, 700);
   }
 
   .heading-collapse-indicator {

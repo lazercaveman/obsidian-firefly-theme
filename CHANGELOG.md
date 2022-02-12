@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 12.02.2022
+### Added
+#### Preview-Mode
+- Adjusted H1 color
+- Adjusted H1, H2 border-color and gap 
+#### Editor-Mode
+- Adjusted link url color in editor
+### Fixed
+
 ## [1.0.5] - 23.09.2021
 ### Added
 - Added table styling
