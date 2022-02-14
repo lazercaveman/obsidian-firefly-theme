@@ -1,5 +1,7 @@
 .markdown-preview-view {
 
+  // TODO: reduce headline sizes
+
   h1,
   h2,
   h3,
@@ -7,7 +9,7 @@
   h5,
   h6 {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-items: center;
     font-family: font(family, primary);
     font-weight: 600;
@@ -16,43 +18,41 @@
   }
 
   h1 {
+    margin-bottom: 40px;
     font-size: font(size, 4xtra-large);
     color: color(title, h1);
   }
 
   h2 {
-    margin-top: 40px;
     color: color(title, h2);
     font-size: font(size, 3xtra-large);
   }
 
   h3 {
-    margin-top: 40px;
     color: color(title, h3);
     font-size: font(size, 2xtra-large);
   }
 
   h4 {
-    margin-top: 40px;
     color: color(title, h4);
     font-size: font(size, xtra-large);
   }
 
   h5 {
-    margin-top: 40px;
     color: color(title, h5);
     font-size: font(size, large);
   }
 
   h6 {
-    margin-top: 40px;
     color: color(title, h6);
     font-size: font(size, large);
   }
 
-  h1,
-  h2 {
-    border-bottom: 1px solid color(primary, 700);
+  hr {
+    margin: 40px 0;
+    height: 1px;
+    border: none;
+    background-color: color(element, border-light);
   }
 
   .heading-collapse-indicator {
