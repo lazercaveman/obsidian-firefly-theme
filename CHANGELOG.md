@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 14.02.2022
+### Added
+- Checkbox Styling
+- Styling vor hr elements
+### Fixed
+- Removed Headline-Underlining for H1 and H2 Headlines
+- Reduced bottom margin from Headline (H2-H5) to 10px
+
 ## [1.1.0] - 12.02.2022
 ### Added
 #### Preview-Mode

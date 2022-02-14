@@ -81,12 +81,12 @@
   --color-family-secondary: Jetbrains Mono, monospace;
   --color-size-xtra-small: 0.75rem;
   --color-size-small: 1rem;
-  --color-size-regular: 1.15rem;
-  --color-size-large: 1.25rem;
-  --color-size-xtra-large: 1.5rem;
-  --color-size-2xtra-large: 1.75rem;
-  --color-size-3xtra-large: 2rem;
-  --color-size-4xtra-large: 2.25rem;
+  --color-size-regular: 1rem;
+  --color-size-large: 1.15rem;
+  --color-size-xtra-large: 1.25rem;
+  --color-size-2xtra-large: 1.5rem;
+  --color-size-3xtra-large: 1.75rem;
+  --color-size-4xtra-large: 2rem;
   --color-lineheight-min: 1em;
   --color-lineheight-medium: 1.5em;
   --color-lineheight-regular: 1.75em;
@@ -219,7 +219,7 @@
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   align-items: center;
   font-family: var(--color-family-primary);
   font-weight: 600;
@@ -227,44 +227,42 @@
   white-space: pre-wrap;
 }
 .markdown-preview-view h1 {
+  margin-bottom: 40px;
   font-size: var(--color-size-4xtra-large);
   color: var(--color-title-h1);
 }
 .markdown-preview-view h2 {
-  margin-top: 40px;
   color: var(--color-title-h2);
   font-size: var(--color-size-3xtra-large);
 }
 .markdown-preview-view h3 {
-  margin-top: 40px;
   color: var(--color-title-h3);
   font-size: var(--color-size-2xtra-large);
 }
 .markdown-preview-view h4 {
-  margin-top: 40px;
   color: var(--color-title-h4);
   font-size: var(--color-size-xtra-large);
 }
 .markdown-preview-view h5 {
-  margin-top: 40px;
   color: var(--color-title-h5);
   font-size: var(--color-size-large);
 }
 .markdown-preview-view h6 {
-  margin-top: 40px;
   color: var(--color-title-h6);
   font-size: var(--color-size-large);
 }
-.markdown-preview-view h1,
-.markdown-preview-view h2 {
-  border-bottom: 1px solid var(--color-primary-700);
+.markdown-preview-view hr {
+  margin: 40px 0;
+  height: 1px;
+  border: none;
+  background-color: var(--color-element-border-light);
 }
 .markdown-preview-view .heading-collapse-indicator {
   color: var(--color-primary-600);
 }
 
 .markdown-preview-view p {
-  margin: 20px 0;
+  margin-bottom: 20px;
   color: var(--color-text-paragraph);
   font-weight: 400;
   font-family: var(--color-family-primary);
@@ -343,6 +341,20 @@
 }
 .markdown-preview-view li > p {
   display: inline;
+}
+
+.task-list-item {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+.task-list-item .task-list-item-checkbox {
+  transform: translateX(-20px);
+  margin-right: 0px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  cursor: pointer;
 }
 
 .markdown-preview-view table {

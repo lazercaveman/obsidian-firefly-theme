@@ -49,3 +49,17 @@
   }
 
 }
+
+.task-list-item {
+  margin-top: 10px!important;
+  margin-bottom: 20px!important;
+  .task-list-item-checkbox {
+    transform: translateX(-20px);
+    margin-right: 0px;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    min-height: 20px;
+    cursor: pointer;
+  }
+}
