@@ -5,8 +5,6 @@
     font-size: font(size, small);
     font-weight: 500;
     line-height: font(lineheight, max);
-    // DEBUG: setting a background-color is currently leading to text-selections is overlayed by the background https://forum.obsidian.md/t/inline-code-occludes-text-selection-and-vim-cursor/11552/8
-    // background-color: color(text, code-background)!important;
   }
 
   .cm-hmd-codeblock {
@@ -21,8 +19,6 @@
   span.cm-inline-code {
     padding: .2em;
     color: color(text, inline-code);
-    // DEBUG: setting a background-color is currently leading to text-selections is overlayed by the background https://forum.obsidian.md/t/inline-code-occludes-text-selection-and-vim-cursor/11552/8
-    // background-color: color(text, code-background)!important;
   }
 
   // Markup-Styling

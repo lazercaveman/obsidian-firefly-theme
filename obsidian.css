@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .theme-dark {
   --color-primary-100: #676f9b;
   --color-primary-200: #5d648c;
@@ -201,6 +202,11 @@
 .cm-s-obsidian span.cm-formatting-list-ul {
   color: var(--color-element-unordered-list-indicator);
 }
+.cm-s-obsidian span.cm-formatting.cm-formatting-task {
+  margin-left: -3px;
+  font-weight: 900;
+  color: var(--color-element-unordered-list-indicator);
+}
 
 .cm-s-obsidian span.cm-hashtag {
   padding: 5px;
@@ -283,7 +289,7 @@
   text-decoration: underline;
 }
 .markdown-preview-view a.external-link {
-  padding-right: 20px;
+  margin-right: 0.2em;
 }
 .markdown-preview-view a.internal-link {
   text-decoration: none;
@@ -295,10 +301,20 @@
 .markdown-preview-view blockquote {
   margin: 20px;
   border: unset;
-  border-left: 1px solid var(--color-primary-400);
+  border-left: 2px solid var(--color-primary-600);
+  color: var(--color-text-paragraph);
   font-style: italic;
 }
+.markdown-preview-view blockquote ::before {
+  content: '" ';
+  font-size: 1.3em !important;
+}
+.markdown-preview-view blockquote ::after {
+  content: ' "';
+  font-size: 1.3em !important;
+}
 .markdown-preview-view blockquote p {
+  font-size: 1.3em !important;
   color: var(--color-text-quote);
 }
 
@@ -342,19 +358,41 @@
 .markdown-preview-view li > p {
   display: inline;
 }
-
-.task-list-item {
+.markdown-preview-view .task-list-item {
   margin-top: 10px !important;
   margin-bottom: 20px !important;
 }
-.task-list-item .task-list-item-checkbox {
+.markdown-preview-view .task-list-item input.task-list-item-checkbox {
+  top: 0.5em;
   transform: translateX(-20px);
   margin-right: 0px;
-  width: 20px;
-  min-width: 20px;
-  height: 20px;
-  min-height: 20px;
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  min-height: 22px;
+  background-color: var(--color-primary-500);
+  border: 2px solid var(--color-primary-100);
+  border-radius: 3px;
+  filter: none;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.markdown-preview-view .task-list-item input.task-list-item-checkbox:checked {
+  background-color: var(--color-primary-100) !important;
+}
+.markdown-preview-view .task-list-item input.task-list-item-checkbox:checked:before {
+  content: "✓";
+  color: var(--color-element-unordered-list-indicator);
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.markdown-preview-view .task-list-item.is-checked {
+  color: var(--color-text-paragraph) !important;
+  text-decoration: none !important;
 }
 
 .markdown-preview-view table {
