@@ -8,4 +8,10 @@
     color: color(element, unordered-list-indicator);
   }
 
+  span.cm-formatting.cm-formatting-task {
+    margin-left: -3px;
+    font-weight: 900;
+    color: color(element, unordered-list-indicator);
+  }
+
 }

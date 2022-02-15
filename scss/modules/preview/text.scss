@@ -25,7 +25,7 @@
     }
 
     &.external-link {
-      padding-right: 20px;
+      margin-right: .2em;
     }
 
     &.internal-link {
@@ -41,9 +41,19 @@
   blockquote {
     margin: 20px;
     border: unset;
-    border-left: 1px solid color(primary, 400);
+    border-left: 2px solid color(primary, 600);
+    color: color(text, paragraph);
     font-style: italic;
+    ::before {
+      content: '" ';
+      font-size: 1.3em!important;
+    }
+    ::after {
+      content: ' "';
+      font-size: 1.3em!important;
+    }
     p {
+      font-size: 1.3em!important;
       color: color(text, quote);
     }
   }
