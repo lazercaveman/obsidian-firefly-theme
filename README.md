@@ -1,4 +1,4 @@
-# Firefly Obsidian Theme
+# Firefly Obsidian Theme (may be outdated)
 
 ## 📦 About this Version 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
