@@ -1,23 +1,21 @@
 .view-content {
-
-  .workspace-leaf-content .view-content {
-
-    .tree-item {
-
-    }
-
-  }
-
   .tree-item-inner {
     color: color(text, paragraph);
   }
-
 }
 
 .tag-pane-tag-text {
   color: color(text, paragraph);
   &:before {
     content: '# '
+  }
+}
+
+.workspace-tabs.mod-top.mod-top-right-space {
+  .workspace-tab-header-container {
+    .sidebar-toggle-button.mod-right {
+      background-color: color(primary, 900);
+    }
   }
 }
 

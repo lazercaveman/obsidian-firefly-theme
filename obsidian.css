@@ -31,6 +31,7 @@
   --color-element-ordered-list-indicator: #ebeff7;
   --color-element-unordered-list-indicator: #ebeff7;
   --color-element-markup-tags: #FFC75F;
+  --color-element-codeBlock: #0a0b0f;
   --color-element-markup-attribute: #95ff6f;
   --color-element-markup-attribute-value: #ebeff7;
   --color-text-paragraph: #c0cdf3;
@@ -161,13 +162,14 @@
   color: var(--color-primary-100);
 }
 
-.cm-s-obsidian pre.HyperMD-codeblock {
+.cm-s-obsidian pre.HyperMD-codeblock, .cm-s-obsidian .HyperMD-codeblock {
   font-family: var(--color-family-secondary);
   font-size: var(--color-size-small);
   font-weight: 500;
   line-height: var(--color-lineheight-max);
+  background-color: var(--color-element-codeBlock) !important;
 }
-.cm-s-obsidian .cm-hmd-codeblock {
+.cm-s-obsidian .cm-hmd-codeblock, .cm-s-obsidian .HyperMD-codeblock {
   color: var(--color-text-code);
 }
 .cm-s-obsidian .CodeMirror-linenumber {
@@ -498,6 +500,10 @@
   max-width: 940px;
 }
 
+.view-header {
+  background-color: var(--color-primary-900) !important;
+}
+
 .mod-root > .nav-folder-title {
   display: none;
 }
@@ -558,6 +564,12 @@ svg {
   color: var(--color-primary-1100);
   background-color: var(--color-text-hash-tag);
   border-radius: 5px;
+}
+
+.workspace-sidedock-vault-profile {
+  background-color: var(--color-primary-900) !important;
+  border: none !important;
+  width: 100% !important;
 }
 
 .nav-header {
@@ -652,9 +664,17 @@ svg {
   content: "# ";
 }
 
+.workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header-container .sidebar-toggle-button.mod-right {
+  background-color: var(--color-primary-900);
+}
+
 .tag-pane-tag-count {
   color: var(--color-text-hash-tag);
   background-color: var(--color-primary-1100);
+}
+
+* {
+  border: none !important;
 }
 
 .titlebar {
@@ -665,6 +685,11 @@ svg {
 }
 .titlebar .titlebar-button-container.mod-left .titlebar-button svg {
   color: white;
+}
+
+.workspace-ribbon:before, .side-dock-ribbon:before, .mod-left:before {
+  background-color: var(--color-primary-900) !important;
+  border: none !important;
 }
 
 .workspace-split,
@@ -716,6 +741,7 @@ svg {
 }
 
 .workspace-leaf .view-header {
+  padding-right: 0;
   background-color: var(--color-primary-900);
   border: none;
 }
@@ -723,6 +749,7 @@ svg {
   color: var(--color-element-icon);
 }
 .workspace-leaf .view-header .view-actions {
+  padding: 12px;
   color: var(--color-element-icon);
   background-color: var(--color-primary-900);
 }

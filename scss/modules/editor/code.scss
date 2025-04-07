@@ -1,13 +1,14 @@
 .cm-s-obsidian {
 
-  pre.HyperMD-codeblock {
+  pre.HyperMD-codeblock, .HyperMD-codeblock {
     font-family: font(family, secondary);
     font-size: font(size, small);
     font-weight: 500;
     line-height: font(lineheight, max);
+    background-color: color(element, codeBlock)!important;
   }
 
-  .cm-hmd-codeblock {
+  .cm-hmd-codeblock, .HyperMD-codeblock {
     color: color(text, code);
   }
 
