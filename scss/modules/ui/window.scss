@@ -1,3 +1,7 @@
+* {
+  border: none!important;
+}
+
 .titlebar {
   background-color: color(primary, 1000);
   .titlebar-text {
@@ -5,6 +9,13 @@
   }
   .titlebar-button-container.mod-left .titlebar-button svg {
     color: white;
+  }
+}
+
+.workspace-ribbon, .side-dock-ribbon, .mod-left {
+  &:before {
+    background-color: color(primary, 900)!important;
+    border: none!important;
   }
 }
 
@@ -63,12 +74,14 @@
 .workspace-leaf {
 
   .view-header {
+    padding-right: 0;
     background-color: color(primary, 900);
     border: none;
     .view-header-title {
       color: color(element, icon);
     }
     .view-actions {
+      padding: 12px;
       color: color(element, icon);
       background-color: color(primary, 900);
     }

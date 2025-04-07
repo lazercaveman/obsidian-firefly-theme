@@ -1,4 +1,4 @@
-# Firefly Obsidian Theme (may be outdated)
+# Firefly Obsidian Theme (13.800+ Downloads)
 
 ## 📦 About this Version 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
@@ -24,9 +24,7 @@ This is is an early version of the Firefly Theme, and some things may not be imp
 6. Select for Firefly and then you're done! 🎉
 
 ## ⚡️ About Firefly Theme
-
 Firefly is a theme for [Obsidian](https://obsidian.md/). The template provides a clean UI and decent color accents (for dark and light theme setup).
-
 ![](./firefly-theme-screenshot.png)
 
 Firefly was created to add an Obsidian theme, that has more of the look and feel of a code editor in editor mode, and relies on more extended text formatting in preview mode, to deliver more of a blog ux there. 
