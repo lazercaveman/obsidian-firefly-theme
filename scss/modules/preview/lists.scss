@@ -6,8 +6,7 @@
     border-left: 1px solid color(primary, 500);
   }
 
-  ul,
-  ol {
+  ul, ol {
     &:first-child {
       margin-bottom: 20px;
     }
@@ -28,12 +27,12 @@
   ul li {
     padding-left: 10px;
     &::marker {
-      color: color(element, unordered-list-indicator);
+      color: color(element, unordered-list-indicator)!important;
     }
   }
 
   ol li {
-    padding-left: 10px;
+    margin-left: 32px;
 
     &::marker {
       color: color(element, ordered-list-indicator);
@@ -56,6 +55,7 @@
       top: .5em;
       transform: translateX(-20px);
       margin-right: 0px;
+      margin-left: 10px;
       width: 22px;
       min-width: 22px;
       height: 22px;
@@ -77,6 +77,9 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%,-50%);
+        }
+        &:after {
+          content: none;
         }
       }
     }
