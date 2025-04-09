@@ -2,9 +2,7 @@
 
 ## 📦 About this Version 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
-
-This is an early version of the **Firefly Theme** for [Obsidian](https://obsidian.md/). Some features may still be missing — but it works well for daily use.  
-**If you're missing something, feel free to [open an issue](https://github.com/lazercaveman/firefly-obsidian-theme/issues)** to discuss ideas or request features.
+**If you're missing something, feel free to [open an issue](https://github.com/lazercaveman/firefly-obsidian-theme/issues)** to discuss ideas or request features or just participate by forking the repo and adding your desired changes.
 
 ---
 
