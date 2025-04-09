@@ -5,6 +5,7 @@
   }
 
   span.cm-formatting-list-ul {
+    padding-left: 0;
     color: color(element, unordered-list-indicator);
   }
 
@@ -12,6 +13,24 @@
     margin-left: -3px;
     font-weight: 900;
     color: color(element, unordered-list-indicator);
+  }
+
+  ul, ol {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin: 5px 0;
+      color: color(text, paragraph);
+      font-size: font(size, regular);
+      line-height: font(lineheight, regular);
+      strong {
+        font-weight: 400;
+        color: color(text, strong);
+        filter: drop-shadow(0 0 3px color(text, paragraph));
+      }
+    }
   }
 
 }

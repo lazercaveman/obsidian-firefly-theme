@@ -2,6 +2,10 @@
   border: none!important;
 }
 
+.clickable-icon, .nav-action-button, .view-header-title-parent {
+  cursor: pointer!important;
+}
+
 .titlebar {
   background-color: color(primary, 1000);
   .titlebar-text {
@@ -73,6 +77,10 @@
 
 .workspace-leaf {
 
+  .mod-fade:not(.mod-at-end):after {
+    content: none!important;
+  }
+
   .view-header {
     padding-right: 0;
     background-color: color(primary, 900);
@@ -90,13 +98,11 @@
   &.mod-active {
     .view-header {
       background-color: color(primary, 800);
-      .view-header-title-container {
+      .view-header-title {
+        color: color(element, icon);
         &:after {
           content: none;
         }
-      }
-      .view-header-title {
-        color: color(element, icon);
       }
       .view-actions {
         color: color(element, icon);
