@@ -1,3 +1,15 @@
-.markdown-source-view.mod-cm6 .cm-table-widget th {
-  background-color: red!important;
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper table {
+  width: 100%;
+  th {
+    background-color: color(primary, 500)!important;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid color(primary, 500)!important;
+  }
+}
+
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
+  width: 880px;
 }

@@ -7,7 +7,6 @@
   h5,
   h6 {
     display: block;
-    margin-bottom: 10px;
     align-items: center;
     font-family: font(family, primary);
     font-weight: 600;
@@ -16,7 +15,6 @@
   }
 
   h1 {
-    margin-bottom: 40px;
     font-size: font(size, 4xtra-large);
     color: color(title, h1);
   }
@@ -47,7 +45,6 @@
   }
 
   hr {
-    margin: 40px 0;
     height: 1px;
     border: none;
     background-color: color(element, border-light);
