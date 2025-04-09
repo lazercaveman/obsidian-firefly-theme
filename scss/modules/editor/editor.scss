@@ -1,4 +1,13 @@
 .cm-s-obsidian {
+  width: 100%;
+
+  .cm-sizer {
+    min-width: 940px;
+  }
+
+  .cm-line {
+    min-width: 860px;
+  }
 
   .CodeMirror-gutter-elt {
     padding-right: 10px;

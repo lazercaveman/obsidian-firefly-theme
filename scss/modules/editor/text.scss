@@ -1,9 +1,14 @@
-.cm-s-obsidian {
+.cm-strong {
+  color: color(text, paragraph)!important;
+  font-weight: 800;
+}
 
+.cm-s-obsidian {
   font-family: font(family, secondary);
   font-size: font(size, small);
   line-height: font(lineheight, regular);
   font-weight: 500;
+  color: color(text, paragraph);
 
   .CodeMirror-line {
     color: color(text, paragraph);

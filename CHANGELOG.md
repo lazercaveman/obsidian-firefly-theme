@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.1.4] - 09.04.2025
+### Added
+- Added functionality to gulp-file, to auto add compiled theme to obsidian folder during development
+- Adjusted styling according to obsidian ui updates, for better look and feel
+- Added styles for new obsidian ui elements
+- Using yarn now instead of npm
+- Updated readme file
+
+### Fixed
+- Removed headline and other elements margins, since these do not work with Obsidian changes
+
 ## [1.1.1] - 14.02.2022
 ### Added
 - Checkbox Styling

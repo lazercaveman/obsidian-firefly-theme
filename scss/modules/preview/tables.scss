@@ -1,7 +1,6 @@
 .markdown-preview-view {
 
   table {
-    margin: 80px auto;
     width: 100%;
     border-radius: 20px;
   }
@@ -11,7 +10,7 @@
       padding: 10px 40px;
       border: none;
       color: color(title, h3);
-      background-color: color(primary, 700);
+      background-color: color(primary, 700)!important;
       &:first-child {
         border-radius: 20px 0 0 20px;
       }
