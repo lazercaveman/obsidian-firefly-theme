@@ -129,11 +129,11 @@
 .cm-s-obsidian {
   width: 100%;
 }
-.cm-s-obsidian .cm-sizer {
-  min-width: 940px;
+.cm-s-obsidian .cm-lineWrapping {
+  width: 100%;
 }
 .cm-s-obsidian .cm-line {
-  min-width: 860px;
+  width: 100%;
 }
 .cm-s-obsidian .CodeMirror-gutter-elt {
   padding-right: 10px;
