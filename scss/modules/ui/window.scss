@@ -6,6 +6,11 @@
   cursor: pointer!important;
 }
 
+.is-focused .workspace-leaf.mod-active .view-header {
+  background-color: var(--color-primary-800)!important;
+  border-radius: 10px;
+}
+
 .titlebar {
   background-color: color(primary, 1000);
   .titlebar-text {
