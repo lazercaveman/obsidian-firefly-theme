@@ -1,4 +1,4 @@
-# ✨ Firefly Obsidian Theme (>15,500 Downloads ♥️)
+# ✨ Firefly Obsidian Theme (>16,000 Downloads ♥️)
 
 ## 📦 About this Version 
 ![Release Badge](https://img.shields.io/github/v/release/lazercaveman/firefly-obsidian-theme)
