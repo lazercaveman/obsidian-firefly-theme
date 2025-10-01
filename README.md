@@ -92,7 +92,6 @@ Firefly was inspired by and blends elements of these amazing themes:
 
 ## ✌️ License
 
-This theme is released under the **CC0-1.0 License** — feel free to use, change, remix, or share without restrictions.
+This theme is released under the **CC0-1.0 License**, by [Ali Soueidan](https://alisoueidan.com) — feel free to use, change, remix, or share without restrictions.
 
 ---
-
