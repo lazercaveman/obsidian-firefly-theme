@@ -1,40 +1,44 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .cm-strong {
-  color: color(text, paragraph)!important;
+  color: colors.get-color(text, paragraph)!important;
   font-weight: 800;
 }
 
 .cm-s-obsidian {
-  font-family: font(family, secondary);
-  font-size: font(size, small);
-  line-height: font(lineheight, regular);
+  font-family: texts.font(family, secondary);
+  font-size: texts.font(size, small);
+  line-height: texts.font(lineheight, regular);
   font-weight: 500;
-  color: color(text, paragraph);
+  color: colors.get-color(text, paragraph);
 
   .CodeMirror-line {
-    color: color(text, paragraph);
+    color: colors.get-color(text, paragraph);
   }
 
   .cm-em,
   .cm-strong {
-    color: color(text, strong);
+    color: colors.get-color(text, strong);
   }
 
   .cm-formatting-link,
   .cm-link {
-    color: color(text, link)!important;
+    color: colors.get-color(text, link)!important;
   }
 
   .cm-formatting-link-string,
   .cm-url {
-    color: color(text, linkUrl)!important;
+    color: colors.get-color(text, linkUrl)!important;
   }
 
   span.cm-quote {
     margin-left: 20px;
-    color: color(text, quote);
+    color: colors.get-color(text, quote);
     font-style: italic;
     &.cm-formatting{
-      color: color(primary, 100);
+      color: colors.get-color(primary, 100);
     }
   }
 }

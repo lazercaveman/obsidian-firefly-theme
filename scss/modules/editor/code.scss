@@ -1,37 +1,41 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .cm-s-obsidian {
 
   pre.HyperMD-codeblock, .HyperMD-codeblock {
-    font-family: font(family, secondary);
-    font-size: font(size, small);
+    font-family: texts.font(family, secondary);
+    font-size: texts.font(size, small);
     font-weight: 500;
-    line-height: font(lineheight, max);
-    background-color: color(element, codeBlock)!important;
+    line-height: texts.font(lineheight, max);
+    background-color: colors.get-color(element, codeBlock)!important;
   }
 
   .cm-hmd-codeblock, .HyperMD-codeblock {
-    color: color(text, code);
+    color: colors.get-color(text, code);
   }
 
   .CodeMirror-linenumber {
-    color: color(primary, 100);
-    font-size: font(size, regular);
+    color: colors.get-color(primary, 100);
+    font-size: texts.font(size, regular);
   }
 
   span.cm-inline-code {
     padding: .2em;
-    color: color(text, inline-code);
+    color: colors.get-color(text, inline-code);
   }
 
   // Markup-Styling
   span {
     &.cm-tag {
-      color: color(element, markup-tags);
+      color: colors.get-color(element, markup-tags);
     }
     &.cm-attribute {
-      color: color(element, markup-attribute);
+      color: colors.get-color(element, markup-attribute);
     }
     &.cm-string {
-      color: color(element, markup-attribute-value);
+      color: colors.get-color(element, markup-attribute-value);
     }
   }
 

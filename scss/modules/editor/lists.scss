@@ -1,18 +1,22 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .cm-s-obsidian {
 
   span.cm-formatting-list-ol {
-    color: color(element, ordered-list-indicator);
+    color: colors.get-color(element, ordered-list-indicator);
   }
 
   span.cm-formatting-list-ul {
     padding-left: 0;
-    color: color(element, unordered-list-indicator);
+    color: colors.get-color(element, unordered-list-indicator);
   }
 
   span.cm-formatting.cm-formatting-task {
     margin-left: -3px;
     font-weight: 900;
-    color: color(element, unordered-list-indicator);
+    color: colors.get-color(element, unordered-list-indicator);
   }
 
   ul, ol {
@@ -22,13 +26,13 @@
 
     li {
       margin: 5px 0;
-      color: color(text, paragraph);
-      font-size: font(size, regular);
-      line-height: font(lineheight, regular);
+      color: colors.get-color(text, paragraph);
+      font-size: texts.font(size, regular);
+      line-height: texts.font(lineheight, regular);
       strong {
         font-weight: 400;
-        color: color(text, strong);
-        filter: drop-shadow(0 0 3px color(text, paragraph));
+        color: colors.get-color(text, strong);
+        filter: drop-shadow(0 0 3px colors.get-color(text, paragraph));
       }
     }
   }

@@ -114,7 +114,7 @@ $colorsLight: (
   }
 }
 
-@function color( $variant, $type ) {
+@function get-color( $variant, $type ) {
   @each $color, $shades in $colors {
     @each $shade, $value in $shades {
       @if #{$variant}-#{$type} == #{$color}-#{$shade} {

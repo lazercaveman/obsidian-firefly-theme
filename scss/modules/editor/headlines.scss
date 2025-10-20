@@ -1,34 +1,38 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .cm-header-1,
 .cm-header-2,
 .cm-header-3,
 .cm-header-4,
 .cm-header-5,
 .cm-header-6 {
-  line-height: font(lineheight, regular);
+  line-height: texts.font(lineheight, regular);
   font-weight: 500;
-  font-size: font(size, regular);
+  font-size: texts.font(size, regular);
 }
 
 .cm-header-1 {
-  color: color(editor-title, h1);
+  color: colors.get-color(editor-title, h1);
 }
 
 .cm-header-2 {
-  color: color(editor-title, h2);
+  color: colors.get-color(editor-title, h2);
 }
 
 .cm-header-3 {
-  color: color(editor-title, h3);
+  color: colors.get-color(editor-title, h3);
 }
 
 .cm-header-4 {
-  color: color(editor-title, h4);
+  color: colors.get-color(editor-title, h4);
 }
 
 .cm-header-5 {
-  color: color(editor-title, h5);
+  color: colors.get-color(editor-title, h5);
 }
 
 .cm-header-6 {
-  color: color(editor-title, h6);
+  color: colors.get-color(editor-title, h6);
 }

@@ -11,14 +11,14 @@
   "author": "Ali Soueidan",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.3",
-    "dotenv": "^16.4.7",
-    "gulp": "^5.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^5.0.0"
+    "browser-sync": "^3.0.4",
+    "dotenv": "^17.2.3",
+    "gulp": "^5.0.1",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^6.0.1"
   },
   "dependencies": {
-    "sass": "^1.39.0"
+    "sass": "^1.93.2"
   },
-  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+  "packageManager": "yarn@4.9.1"
 }

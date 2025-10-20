@@ -1,22 +1,26 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .markdown-preview-view {
 
   p {
     margin-bottom: 10px;
-    color: color(text, paragraph);
+    color: colors.get-color(text, paragraph);
     font-weight: 400;
-    font-family: font(family, primary);
-    font-size: font(size, regular);
-    line-height: font(lineheight, large);
+    font-family: texts.font(family, primary);
+    font-size: texts.font(size, regular);
+    line-height: texts.font(lineheight, large);
 
     strong {
       font-weight: 400;
-      color: color(text, strong);
-      filter: drop-shadow(0 0 3px color(text, paragraph));
+      color: colors.get-color(text, strong);
+      filter: drop-shadow(0 0 3px colors.get-color(text, paragraph));
     }
   }
 
   a {
-    color: color(text, link);
+    color: colors.get-color(text, link);
     text-decoration: underline;
     line-height: 0;
 
@@ -30,7 +34,7 @@
 
     &.internal-link {
       text-decoration: none;
-      color: color(text, link);
+      color: colors.get-color(text, link);
 
       &:hover {
         text-decoration: underline;
@@ -42,10 +46,10 @@
     position: relative;
     margin: 20px;
     border: unset;
-    border-left: 2px solid color(primary, 600);
+    border-left: 2px solid colors.get-color(primary, 600);
     font-style: italic;
     p {
-      color: color(text, quote)!important;
+      color: colors.get-color(text, quote)!important;
     }
     ::before {
       content: '';
@@ -56,11 +60,11 @@
       width: 2px;
       opacity: .25;
       height: 100%;
-      background-color: color(text, quote-border)!important;
+      background-color: colors.get-color(text, quote-border)!important;
     }
     p {
       font-size: 1.3em!important;
-      color: color(text, quote);
+      color: colors.get-color(text, quote);
     }
   }
 

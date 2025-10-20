@@ -1,11 +1,14 @@
+@use "./_colors.scss" as colors;
+
+
 .view-content {
   .tree-item-inner {
-    color: color(text, paragraph);
+    color: colors.get-color(text, paragraph);
   }
 }
 
 .tag-pane-tag-text {
-  color: color(text, paragraph);
+  color: colors.get-color(text, paragraph);
   &:before {
     content: '# '
   }
@@ -14,12 +17,12 @@
 .workspace-tabs.mod-top.mod-top-right-space {
   .workspace-tab-header-container {
     .sidebar-toggle-button.mod-right {
-      background-color: color(primary, 900);
+      background-color: colors.get-color(primary, 900);
     }
   }
 }
 
 .tag-pane-tag-count {
-  color: color(text, hash-tag);
-  background-color: color(primary, 1100)
+  color: colors.get-color(text, hash-tag);
+  background-color: colors.get-color(primary, 1100)
 }

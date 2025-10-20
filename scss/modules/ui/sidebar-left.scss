@@ -1,3 +1,5 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
 
 
 .mod-root > .nav-folder-title {
@@ -5,32 +7,32 @@
 }
 
 .nav-file-title.is-active {
-  background-color: color(primary, 200);
+  background-color: colors.get-color(primary, 200);
 }
 
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
-  background-color: color(primary, 400);
+  background-color: colors.get-color(primary, 400);
 }
 
 .nav-folder-title,
 .nav-file-title,
 svg {
-  color: color(element, icon);
+  color: colors.get-color(element, icon);
 }
 
 .nav-folder-title,
 .nav-file-title {
-  font-family: font(family, primary);
+  font-family: texts.font(family, primary);
 }
 
 .nav-folder-title.is-being-dragged-over {
-  border: 1px solid color(element, border);
+  border: 1px solid colors.get-color(element, border);
 }
 
 .nav-folder-children > .nav-file,
 .nav-folder-children > .nav-folder {
-  border-left: 1px solid color(element, border-light);
+  border-left: 1px solid colors.get-color(element, border-light);
 }
 
 .mod-root > .nav-folder-children > .nav-file,
@@ -46,31 +48,31 @@ svg {
 .search-result {
 
   .search-result-file-title {
-    color: color(text, paragraph)
+    color: colors.get-color(text, paragraph)
   }
 
   .tree-item-flair-outer span {
     margin-right: 7px;
-    color: color(text, hash-tag);
-    background: color(primary, 1100);
+    color: colors.get-color(text, hash-tag);
+    background: colors.get-color(primary, 1100);
   }
 
   .search-result-file-match {
-    color: color(text, quote);
-    background: color(primary, 1100);
+    color: colors.get-color(text, quote);
+    background: colors.get-color(primary, 1100);
   }
 
   .search-result-file-matched-text {
     padding: 1px 5px;
-    color: color(primary, 1100);
-    background-color: color(text, hash-tag);
+    color: colors.get-color(primary, 1100);
+    background-color: colors.get-color(text, hash-tag);
     border-radius: 5px;
   }
 
 }
 
 .workspace-sidedock-vault-profile {
-  background-color: color(primary, 900)!important;
+  background-color: colors.get-color(primary, 900)!important;
   border: none!important;
   width: 100%!important
 }
@@ -90,20 +92,20 @@ svg {
     padding: 0;
     width: 40px;
     height: 40px;
-    background: color(primary, 1000);
+    background: colors.get-color(primary, 1000);
     transition: background-color .2s ease;
 
     &.is-active {
-      background-color: color(primary, 800);
+      background-color: colors.get-color(primary, 800);
       svg {
-        color: color(element, icon-highlighted);
+        color: colors.get-color(element, icon-highlighted);
       }
     }
 
     &:hover {
       background-color: #000;
       svg {
-        color: color(element, icon-hover);
+        color: colors.get-color(element, icon-hover);
       }
     }
     svg {
@@ -120,7 +122,7 @@ svg {
   align-items: center;
   border-radius: 10px;
   padding: 5px;
-  background-color: color(primary, 1100);
+  background-color: colors.get-color(primary, 1100);
 }
 
 .workspace-tab-header-container {
@@ -134,7 +136,7 @@ svg {
     cursor: pointer;
 
     &.is-active {
-      background-color: color(primary, 800);
+      background-color: colors.get-color(primary, 800);
       border-radius: 10px;
     }
   }
