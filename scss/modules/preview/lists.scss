@@ -3,7 +3,7 @@
   ul:not(.contains-task-list) ul:not(.contains-task-list) {
     margin-left: -13px;
     padding-inline-start: 42px;
-    border-left: 1px solid color(primary, 500);
+    border-left: 1px solid getColor(primary, 500);
   }
 
   ul, ol {
@@ -13,13 +13,13 @@
 
     li {
       margin: 5px 0;
-      color: color(text, paragraph);
+      color: getColor(text, paragraph);
       font-size: font(size, regular);
       line-height: font(lineheight, regular);
       strong {
         font-weight: 400;
-        color: color(text, strong);
-        filter: drop-shadow(0 0 3px color(text, paragraph));
+        color: getColor(text, strong);
+        filter: drop-shadow(0 0 3px getColor(text, paragraph));
       }
     }
   }
@@ -27,7 +27,7 @@
   ul li {
     padding-left: 10px;
     &::marker {
-      color: color(element, unordered-list-indicator)!important;
+      color: getColor(element, unordered-list-indicator)!important;
     }
   }
 
@@ -35,12 +35,12 @@
     margin-left: 32px;
 
     &::marker {
-      color: color(element, ordered-list-indicator);
+      color: getColor(element, ordered-list-indicator);
     }
   }
 
   .list-collapse-indicator {
-    color: color(primary, 500);
+    color: getColor(primary, 500);
   }
 
   li > p {
@@ -60,18 +60,18 @@
       min-width: 22px;
       height: 22px;
       min-height: 22px;
-      background-color: color(primary, 500);
-      border: 2px solid color(primary, 100);
+      background-color: getColor(primary, 500);
+      border: 2px solid getColor(primary, 100);
       border-radius: 3px;
       filter: none;
       cursor: pointer;
       appearance: none;
       -webkit-appearance: none;
       &:checked {
-        background-color: color(primary, 100)!important;
+        background-color: getColor(primary, 100)!important;
         &:before {
           content: '✓';
-          color: color(element, unordered-list-indicator);
+          color: getColor(element, unordered-list-indicator);
           font-weight: 900;
           position: absolute;
           top: 50%;
@@ -84,7 +84,7 @@
       }
     }
     &.is-checked {
-      color: color(text, paragraph)!important;
+      color: getColor(text, paragraph)!important;
       text-decoration: none!important;
     }
   }

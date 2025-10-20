@@ -5,33 +5,33 @@
     font-size: font(size, small);
     font-weight: 500;
     line-height: font(lineheight, max);
-    background-color: color(element, codeBlock)!important;
+    background-color: getColor(element, codeBlock)!important;
   }
 
   .cm-hmd-codeblock, .HyperMD-codeblock {
-    color: color(text, code);
+    color: getColor(text, code);
   }
 
   .CodeMirror-linenumber {
-    color: color(primary, 100);
+    color: getColor(primary, 100);
     font-size: font(size, regular);
   }
 
   span.cm-inline-code {
     padding: .2em;
-    color: color(text, inline-code);
+    color: getColor(text, inline-code);
   }
 
   // Markup-Styling
   span {
     &.cm-tag {
-      color: color(element, markup-tags);
+      color: getColor(element, markup-tags);
     }
     &.cm-attribute {
-      color: color(element, markup-attribute);
+      color: getColor(element, markup-attribute);
     }
     &.cm-string {
-      color: color(element, markup-attribute-value);
+      color: getColor(element, markup-attribute-value);
     }
   }
 

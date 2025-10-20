@@ -1,5 +1,5 @@
 .cm-strong {
-  color: color(text, paragraph)!important;
+  color: getColor(text, paragraph)!important;
   font-weight: 800;
 }
 
@@ -8,33 +8,33 @@
   font-size: font(size, small);
   line-height: font(lineheight, regular);
   font-weight: 500;
-  color: color(text, paragraph);
+  color: getColor(text, paragraph);
 
   .CodeMirror-line {
-    color: color(text, paragraph);
+    color: getColor(text, paragraph);
   }
 
   .cm-em,
   .cm-strong {
-    color: color(text, strong);
+    color: getColor(text, strong);
   }
 
   .cm-formatting-link,
   .cm-link {
-    color: color(text, link)!important;
+    color: getColor(text, link)!important;
   }
 
   .cm-formatting-link-string,
   .cm-url {
-    color: color(text, linkUrl)!important;
+    color: getColor(text, linkUrl)!important;
   }
 
   span.cm-quote {
     margin-left: 20px;
-    color: color(text, quote);
+    color: getColor(text, quote);
     font-style: italic;
     &.cm-formatting{
-      color: color(primary, 100);
+      color: getColor(primary, 100);
     }
   }
 }

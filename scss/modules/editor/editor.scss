@@ -15,7 +15,7 @@
 
   .cm-formatting,
   .CodeMirror-foldmarker {
-    color: color(primary, 100);
+    color: getColor(primary, 100);
   }
 
 }

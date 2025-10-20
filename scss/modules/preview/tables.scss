@@ -9,8 +9,8 @@
     th {
       padding: 10px 40px;
       border: none;
-      color: color(title, h3);
-      background-color: color(primary, 700)!important;
+      color: getColor(title, h3);
+      background-color: getColor(primary, 700)!important;
       &:first-child {
         border-radius: 20px 0 0 20px;
       }
@@ -22,7 +22,7 @@
 
   tbody tr {
     &:nth-child(even) {
-      background-color: color(primary, 700);
+      background-color: getColor(primary, 700);
     }
     td {
       padding: 10px 40px;
@@ -35,8 +35,8 @@
       }
       strong {
         font-weight: 400;
-        color: color(text, strong);
-        filter: drop-shadow(0 0 3px color(text, paragraph));
+        color: getColor(text, strong);
+        filter: drop-shadow(0 0 3px getColor(text, paragraph));
       }
     }
   }

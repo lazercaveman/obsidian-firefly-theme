@@ -3,8 +3,8 @@
   p {
     .tag {
       padding: 10px;
-      color: color(text, hash-tag);
-      background-color: color(primary, 1000);
+      color: getColor(text, hash-tag);
+      background-color: getColor(primary, 1000);
       border-radius: 5px;
       font-size: font(size, small);
       font-weight: 500;

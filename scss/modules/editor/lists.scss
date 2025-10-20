@@ -1,18 +1,18 @@
 .cm-s-obsidian {
 
   span.cm-formatting-list-ol {
-    color: color(element, ordered-list-indicator);
+    color: getColor(element, ordered-list-indicator);
   }
 
   span.cm-formatting-list-ul {
     padding-left: 0;
-    color: color(element, unordered-list-indicator);
+    color: getColor(element, unordered-list-indicator);
   }
 
   span.cm-formatting.cm-formatting-task {
     margin-left: -3px;
     font-weight: 900;
-    color: color(element, unordered-list-indicator);
+    color: getColor(element, unordered-list-indicator);
   }
 
   ul, ol {
@@ -22,13 +22,13 @@
 
     li {
       margin: 5px 0;
-      color: color(text, paragraph);
+      color: getColor(text, paragraph);
       font-size: font(size, regular);
       line-height: font(lineheight, regular);
       strong {
         font-weight: 400;
-        color: color(text, strong);
-        filter: drop-shadow(0 0 3px color(text, paragraph));
+        color: getColor(text, strong);
+        filter: drop-shadow(0 0 3px getColor(text, paragraph));
       }
     }
   }

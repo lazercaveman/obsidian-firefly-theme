@@ -1,6 +1,6 @@
 @use "./_colors.scss";
 @use "./_text.scss";
 
-@use "./modules/editor/index.scss";
-@use "./modules/preview/index.scss";
-@use "./modules/ui/index.scss";
+@use "./modules/editor/editor-index.scss";
+@use "./modules/preview/preview-index.scss";
+@use "./modules/ui/ui-index.scss";

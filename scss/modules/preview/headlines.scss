@@ -16,42 +16,42 @@
 
   h1 {
     font-size: font(size, 4xtra-large);
-    color: color(title, h1);
+    color: getColor(title, h1);
   }
 
   h2 {
-    color: color(title, h2);
+    color: getColor(title, h2);
     font-size: font(size, 3xtra-large);
   }
 
   h3 {
-    color: color(title, h3);
+    color: getColor(title, h3);
     font-size: font(size, 2xtra-large);
   }
 
   h4 {
-    color: color(title, h4);
+    color: getColor(title, h4);
     font-size: font(size, xtra-large);
   }
 
   h5 {
-    color: color(title, h5);
+    color: getColor(title, h5);
     font-size: font(size, large);
   }
 
   h6 {
-    color: color(title, h6);
+    color: getColor(title, h6);
     font-size: font(size, large);
   }
 
   hr {
     height: 1px;
     border: none;
-    background-color: color(element, border-light);
+    background-color: getColor(element, border-light);
   }
 
   .heading-collapse-indicator {
-    color: color(primary, 600);
+    color: getColor(primary, 600);
   }
 
 }

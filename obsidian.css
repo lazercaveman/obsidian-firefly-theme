@@ -99,31 +99,31 @@
 }
 
 .cm-s-obsidian pre.HyperMD-codeblock, .cm-s-obsidian .HyperMD-codeblock {
-  font-family: var(--color-family-secondary);
-  font-size: var(--color-size-small);
+  font-family: font(family, secondary);
+  font-size: font(size, small);
   font-weight: 500;
-  line-height: var(--color-lineheight-max);
-  background-color: var(--color-element-codeBlock) !important;
+  line-height: font(lineheight, max);
+  background-color: getColor(element, codeBlock) !important;
 }
 .cm-s-obsidian .cm-hmd-codeblock, .cm-s-obsidian .HyperMD-codeblock {
-  color: var(--color-text-code);
+  color: getColor(text, code);
 }
 .cm-s-obsidian .CodeMirror-linenumber {
-  color: var(--color-primary-100);
-  font-size: var(--color-size-regular);
+  color: getColor(primary, 100);
+  font-size: font(size, regular);
 }
 .cm-s-obsidian span.cm-inline-code {
   padding: 0.2em;
-  color: var(--color-text-inline-code);
+  color: getColor(text, inline-code);
 }
 .cm-s-obsidian span.cm-tag {
-  color: var(--color-element-markup-tags);
+  color: getColor(element, markup-tags);
 }
 .cm-s-obsidian span.cm-attribute {
-  color: var(--color-element-markup-attribute);
+  color: getColor(element, markup-attribute);
 }
 .cm-s-obsidian span.cm-string {
-  color: var(--color-element-markup-attribute-value);
+  color: getColor(element, markup-attribute-value);
 }
 
 .cm-s-obsidian {
@@ -140,7 +140,7 @@
 }
 .cm-s-obsidian .cm-formatting,
 .cm-s-obsidian .CodeMirror-foldmarker {
-  color: var(--color-primary-100);
+  color: getColor(primary, 100);
 }
 
 .cm-header-1,
@@ -149,71 +149,71 @@
 .cm-header-4,
 .cm-header-5,
 .cm-header-6 {
-  line-height: var(--color-lineheight-regular);
+  line-height: font(lineheight, regular);
   font-weight: 500;
-  font-size: var(--color-size-regular);
+  font-size: font(size, regular);
 }
 
 .cm-header-1 {
-  color: var(--color-editor-title-h1);
+  color: getColor(editor-title, h1);
 }
 
 .cm-header-2 {
-  color: var(--color-editor-title-h2);
+  color: getColor(editor-title, h2);
 }
 
 .cm-header-3 {
-  color: var(--color-editor-title-h3);
+  color: getColor(editor-title, h3);
 }
 
 .cm-header-4 {
-  color: var(--color-editor-title-h4);
+  color: getColor(editor-title, h4);
 }
 
 .cm-header-5 {
-  color: var(--color-editor-title-h5);
+  color: getColor(editor-title, h5);
 }
 
 .cm-header-6 {
-  color: var(--color-editor-title-h6);
+  color: getColor(editor-title, h6);
 }
 
 .cm-s-obsidian span.cm-formatting-list-ol {
-  color: var(--color-element-ordered-list-indicator);
+  color: getColor(element, ordered-list-indicator);
 }
 .cm-s-obsidian span.cm-formatting-list-ul {
   padding-left: 0;
-  color: var(--color-element-unordered-list-indicator);
+  color: getColor(element, unordered-list-indicator);
 }
 .cm-s-obsidian span.cm-formatting.cm-formatting-task {
   margin-left: -3px;
   font-weight: 900;
-  color: var(--color-element-unordered-list-indicator);
+  color: getColor(element, unordered-list-indicator);
 }
 .cm-s-obsidian ul:first-child, .cm-s-obsidian ol:first-child {
   margin-bottom: 20px;
 }
 .cm-s-obsidian ul li, .cm-s-obsidian ol li {
   margin: 5px 0;
-  color: var(--color-text-paragraph);
-  font-size: var(--color-size-regular);
-  line-height: var(--color-lineheight-regular);
+  color: getColor(text, paragraph);
+  font-size: font(size, regular);
+  line-height: font(lineheight, regular);
 }
 .cm-s-obsidian ul li strong, .cm-s-obsidian ol li strong {
   font-weight: 400;
-  color: var(--color-text-strong);
-  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
+  color: getColor(text, strong);
+  filter: drop-shadow(0 0 3px getColor(text, paragraph));
 }
 
 .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper table {
   width: 100%;
 }
 .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper table th {
-  background-color: var(--color-primary-500) !important;
+  background-color: getColor(primary, 500) !important;
 }
 .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper table th, .markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper table td {
   padding: 10px;
-  border: 1px solid var(--color-primary-500) !important;
+  border: 1px solid getColor(primary, 500) !important;
 }
 
 .markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
@@ -222,48 +222,48 @@
 
 .cm-s-obsidian span.cm-hashtag {
   padding: 5px;
-  color: var(--color-text-hash-tag);
-  background-color: var(--color-primary-900);
-  font-size: var(--color-size-regular);
+  color: getColor(text, hash-tag);
+  background-color: getColor(primary, 900);
+  font-size: font(size, regular);
 }
 .cm-s-obsidian span.cm-hashtag.cm-formatting {
-  color: var(--color-primary-100);
+  color: getColor(primary, 100);
 }
 
 .cm-strong {
-  color: var(--color-text-paragraph) !important;
+  color: getColor(text, paragraph) !important;
   font-weight: 800;
 }
 
 .cm-s-obsidian {
-  font-family: var(--color-family-secondary);
-  font-size: var(--color-size-small);
-  line-height: var(--color-lineheight-regular);
+  font-family: font(family, secondary);
+  font-size: font(size, small);
+  line-height: font(lineheight, regular);
   font-weight: 500;
-  color: var(--color-text-paragraph);
+  color: getColor(text, paragraph);
 }
 .cm-s-obsidian .CodeMirror-line {
-  color: var(--color-text-paragraph);
+  color: getColor(text, paragraph);
 }
 .cm-s-obsidian .cm-em,
 .cm-s-obsidian .cm-strong {
-  color: var(--color-text-strong);
+  color: getColor(text, strong);
 }
 .cm-s-obsidian .cm-formatting-link,
 .cm-s-obsidian .cm-link {
-  color: var(--color-text-link) !important;
+  color: getColor(text, link) !important;
 }
 .cm-s-obsidian .cm-formatting-link-string,
 .cm-s-obsidian .cm-url {
-  color: var(--color-text-linkUrl) !important;
+  color: getColor(text, linkUrl) !important;
 }
 .cm-s-obsidian span.cm-quote {
   margin-left: 20px;
-  color: var(--color-text-quote);
+  color: getColor(text, quote);
   font-style: italic;
 }
 .cm-s-obsidian span.cm-quote.cm-formatting {
-  color: var(--color-primary-100);
+  color: getColor(primary, 100);
 }
 
 .markdown-preview-view h1,
@@ -274,59 +274,59 @@
 .markdown-preview-view h6 {
   display: block;
   align-items: center;
-  font-family: var(--color-family-primary);
+  font-family: font(family, primary);
   font-weight: 600;
-  line-height: var(--color-lineheight-regular);
+  line-height: font(lineheight, regular);
   white-space: pre-wrap;
 }
 .markdown-preview-view h1 {
-  font-size: var(--color-size-4xtra-large);
-  color: var(--color-title-h1);
+  font-size: font(size, 4xtra-large);
+  color: getColor(title, h1);
 }
 .markdown-preview-view h2 {
-  color: var(--color-title-h2);
-  font-size: var(--color-size-3xtra-large);
+  color: getColor(title, h2);
+  font-size: font(size, 3xtra-large);
 }
 .markdown-preview-view h3 {
-  color: var(--color-title-h3);
-  font-size: var(--color-size-2xtra-large);
+  color: getColor(title, h3);
+  font-size: font(size, 2xtra-large);
 }
 .markdown-preview-view h4 {
-  color: var(--color-title-h4);
-  font-size: var(--color-size-xtra-large);
+  color: getColor(title, h4);
+  font-size: font(size, xtra-large);
 }
 .markdown-preview-view h5 {
-  color: var(--color-title-h5);
-  font-size: var(--color-size-large);
+  color: getColor(title, h5);
+  font-size: font(size, large);
 }
 .markdown-preview-view h6 {
-  color: var(--color-title-h6);
-  font-size: var(--color-size-large);
+  color: getColor(title, h6);
+  font-size: font(size, large);
 }
 .markdown-preview-view hr {
   height: 1px;
   border: none;
-  background-color: var(--color-element-border-light);
+  background-color: getColor(element, border-light);
 }
 .markdown-preview-view .heading-collapse-indicator {
-  color: var(--color-primary-600);
+  color: getColor(primary, 600);
 }
 
 .markdown-preview-view p {
   margin-bottom: 10px;
-  color: var(--color-text-paragraph);
+  color: getColor(text, paragraph);
   font-weight: 400;
-  font-family: var(--color-family-primary);
-  font-size: var(--color-size-regular);
-  line-height: var(--color-lineheight-large);
+  font-family: font(family, primary);
+  font-size: font(size, regular);
+  line-height: font(lineheight, large);
 }
 .markdown-preview-view p strong {
   font-weight: 400;
-  color: var(--color-text-strong);
-  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
+  color: getColor(text, strong);
+  filter: drop-shadow(0 0 3px getColor(text, paragraph));
 }
 .markdown-preview-view a {
-  color: var(--color-text-link);
+  color: getColor(text, link);
   text-decoration: underline;
   line-height: 0;
 }
@@ -338,7 +338,7 @@
 }
 .markdown-preview-view a.internal-link {
   text-decoration: none;
-  color: var(--color-text-link);
+  color: getColor(text, link);
 }
 .markdown-preview-view a.internal-link:hover {
   text-decoration: underline;
@@ -347,11 +347,11 @@
   position: relative;
   margin: 20px;
   border: unset;
-  border-left: 2px solid var(--color-primary-600);
+  border-left: 2px solid getColor(primary, 600);
   font-style: italic;
 }
 .markdown-preview-view blockquote p {
-  color: var(--color-text-quote) !important;
+  color: getColor(text, quote) !important;
 }
 .markdown-preview-view blockquote ::before {
   content: "";
@@ -362,46 +362,46 @@
   width: 2px;
   opacity: 0.25;
   height: 100%;
-  background-color: var(--color-text-quote-border) !important;
+  background-color: getColor(text, quote-border) !important;
 }
 .markdown-preview-view blockquote p {
   font-size: 1.3em !important;
-  color: var(--color-text-quote);
+  color: getColor(text, quote);
 }
 
 .markdown-preview-view ul:not(.contains-task-list) ul:not(.contains-task-list) {
   margin-left: -13px;
   padding-inline-start: 42px;
-  border-left: 1px solid var(--color-primary-500);
+  border-left: 1px solid getColor(primary, 500);
 }
 .markdown-preview-view ul:first-child, .markdown-preview-view ol:first-child {
   margin-bottom: 20px;
 }
 .markdown-preview-view ul li, .markdown-preview-view ol li {
   margin: 5px 0;
-  color: var(--color-text-paragraph);
-  font-size: var(--color-size-regular);
-  line-height: var(--color-lineheight-regular);
+  color: getColor(text, paragraph);
+  font-size: font(size, regular);
+  line-height: font(lineheight, regular);
 }
 .markdown-preview-view ul li strong, .markdown-preview-view ol li strong {
   font-weight: 400;
-  color: var(--color-text-strong);
-  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
+  color: getColor(text, strong);
+  filter: drop-shadow(0 0 3px getColor(text, paragraph));
 }
 .markdown-preview-view ul li {
   padding-left: 10px;
 }
 .markdown-preview-view ul li::marker {
-  color: var(--color-element-unordered-list-indicator) !important;
+  color: getColor(element, unordered-list-indicator) !important;
 }
 .markdown-preview-view ol li {
   margin-left: 32px;
 }
 .markdown-preview-view ol li::marker {
-  color: var(--color-element-ordered-list-indicator);
+  color: getColor(element, ordered-list-indicator);
 }
 .markdown-preview-view .list-collapse-indicator {
-  color: var(--color-primary-500);
+  color: getColor(primary, 500);
 }
 .markdown-preview-view li > p {
   display: inline;
@@ -419,8 +419,8 @@
   min-width: 22px;
   height: 22px;
   min-height: 22px;
-  background-color: var(--color-primary-500);
-  border: 2px solid var(--color-primary-100);
+  background-color: getColor(primary, 500);
+  border: 2px solid getColor(primary, 100);
   border-radius: 3px;
   filter: none;
   cursor: pointer;
@@ -428,11 +428,11 @@
   -webkit-appearance: none;
 }
 .markdown-preview-view .task-list-item input.task-list-item-checkbox:checked {
-  background-color: var(--color-primary-100) !important;
+  background-color: getColor(primary, 100) !important;
 }
 .markdown-preview-view .task-list-item input.task-list-item-checkbox:checked:before {
   content: "✓";
-  color: var(--color-element-unordered-list-indicator);
+  color: getColor(element, unordered-list-indicator);
   font-weight: 900;
   position: absolute;
   top: 50%;
@@ -443,7 +443,7 @@
   content: none;
 }
 .markdown-preview-view .task-list-item.is-checked {
-  color: var(--color-text-paragraph) !important;
+  color: getColor(text, paragraph) !important;
   text-decoration: none !important;
 }
 
@@ -454,8 +454,8 @@
 .markdown-preview-view thead tr th {
   padding: 10px 40px;
   border: none;
-  color: var(--color-title-h3);
-  background-color: var(--color-primary-700) !important;
+  color: getColor(title, h3);
+  background-color: getColor(primary, 700) !important;
 }
 .markdown-preview-view thead tr th:first-child {
   border-radius: 20px 0 0 20px;
@@ -464,7 +464,7 @@
   border-radius: 0 20px 20px 0;
 }
 .markdown-preview-view tbody tr:nth-child(even) {
-  background-color: var(--color-primary-700);
+  background-color: getColor(primary, 700);
 }
 .markdown-preview-view tbody tr td {
   padding: 10px 40px;
@@ -478,55 +478,55 @@
 }
 .markdown-preview-view tbody tr td strong {
   font-weight: 400;
-  color: var(--color-text-strong);
-  filter: drop-shadow(0 0 3px var(--color-text-paragraph));
+  color: getColor(text, strong);
+  filter: drop-shadow(0 0 3px getColor(text, paragraph));
 }
 
 .markdown-preview-view pre {
   margin: 40px 0 !important;
   padding: 20px;
-  background-color: var(--color-text-code-background) !important;
-  font-family: var(--color-family-secondary);
+  background-color: getColor(text, code-background) !important;
+  font-family: font(family, secondary);
   font-weight: 500;
-  line-height: var(--color-lineheight-regular);
+  line-height: font(lineheight, regular);
   border-radius: 5px;
 }
 .markdown-preview-view pre.language-_note {
   margin: 20px 0;
   padding: 20px;
-  background-color: var(--color-primary-700) !important;
-  box-shadow: 0 0 20px var(--color-primary-900);
+  background-color: getColor(primary, 700) !important;
+  box-shadow: 0 0 20px getColor(primary, 900);
 }
 .markdown-preview-view pre.language-_note code {
   white-space: initial;
 }
 .markdown-preview-view pre.language-_note code:before {
   content: "#Note: ";
-  color: var(--color-text-note-indicator);
+  color: getColor(text, note-indicator);
   filter: drop-shadow(0 0 5px #000);
-  font-size: var(--color-size-large);
+  font-size: font(size, large);
   font-weight: 600;
 }
 .markdown-preview-view pre code {
-  color: var(--color-text-code);
-  line-height: var(--color-lineheight-large) !important;
-  font-size: var(--color-size-regular);
+  color: getColor(text, code);
+  line-height: font(lineheight, large) !important;
+  font-size: font(size, regular);
   background-color: unset !important;
 }
 .markdown-preview-view p code,
 .markdown-preview-view tbody tr td code {
   padding: 0.2em 10px;
-  color: var(--color-text-inline-code);
-  background-color: var(--color-text-code-background) !important;
+  color: getColor(text, inline-code);
+  background-color: getColor(text, code-background) !important;
   border-radius: 5px;
 }
 
 .markdown-preview-view p .tag {
   padding: 10px;
-  color: var(--color-text-hash-tag);
-  background-color: var(--color-primary-1000);
+  color: getColor(text, hash-tag);
+  background-color: getColor(primary, 1000);
   border-radius: 5px;
-  font-size: var(--color-size-small);
+  font-size: font(size, small);
   font-weight: 500;
 }
 
@@ -550,7 +550,7 @@
 }
 
 .view-header {
-  background-color: var(--color-primary-900) !important;
+  background-color: getColor(primary, 900) !important;
 }
 
 .mod-root > .nav-folder-title {
@@ -558,32 +558,32 @@
 }
 
 .nav-file-title.is-active {
-  background-color: var(--color-primary-200);
+  background-color: getColor(primary, 200);
 }
 
 body:not(.is-grabbing) .nav-file-title:hover,
 body:not(.is-grabbing) .nav-folder-title:hover {
-  background-color: var(--color-primary-400);
+  background-color: getColor(primary, 400);
 }
 
 .nav-folder-title,
 .nav-file-title,
 svg {
-  color: var(--color-element-icon);
+  color: getColor(element, icon);
 }
 
 .nav-folder-title,
 .nav-file-title {
-  font-family: var(--color-family-primary);
+  font-family: font(family, primary);
 }
 
 .nav-folder-title.is-being-dragged-over {
-  border: 1px solid var(--color-element-border);
+  border: 1px solid getColor(element, border);
 }
 
 .nav-folder-children > .nav-file,
 .nav-folder-children > .nav-folder {
-  border-left: 1px solid var(--color-element-border-light);
+  border-left: 1px solid getColor(element, border-light);
 }
 
 .mod-root > .nav-folder-children > .nav-file,
@@ -597,26 +597,26 @@ svg {
 }
 
 .search-result .search-result-file-title {
-  color: var(--color-text-paragraph);
+  color: getColor(text, paragraph);
 }
 .search-result .tree-item-flair-outer span {
   margin-right: 7px;
-  color: var(--color-text-hash-tag);
-  background: var(--color-primary-1100);
+  color: getColor(text, hash-tag);
+  background: getColor(primary, 1100);
 }
 .search-result .search-result-file-match {
-  color: var(--color-text-quote);
-  background: var(--color-primary-1100);
+  color: getColor(text, quote);
+  background: getColor(primary, 1100);
 }
 .search-result .search-result-file-matched-text {
   padding: 1px 5px;
-  color: var(--color-primary-1100);
-  background-color: var(--color-text-hash-tag);
+  color: getColor(primary, 1100);
+  background-color: getColor(text, hash-tag);
   border-radius: 5px;
 }
 
 .workspace-sidedock-vault-profile {
-  background-color: var(--color-primary-900) !important;
+  background-color: getColor(primary, 900) !important;
   border: none !important;
   width: 100% !important;
 }
@@ -637,20 +637,20 @@ svg {
   padding: 0;
   width: 40px;
   height: 40px;
-  background: var(--color-primary-1000);
+  background: getColor(primary, 1000);
   transition: background-color 0.2s ease;
 }
 .nav-header .nav-action-button.is-active {
-  background-color: var(--color-primary-800);
+  background-color: getColor(primary, 800);
 }
 .nav-header .nav-action-button.is-active svg {
-  color: var(--color-element-icon-highlighted);
+  color: getColor(element, icon-highlighted);
 }
 .nav-header .nav-action-button:hover {
   background-color: #000;
 }
 .nav-header .nav-action-button:hover svg {
-  color: var(--color-element-icon-hover);
+  color: getColor(element, icon-hover);
 }
 .nav-header .nav-action-button svg {
   margin: 0;
@@ -664,7 +664,7 @@ svg {
   align-items: center;
   border-radius: 10px;
   padding: 5px;
-  background-color: var(--color-primary-1100);
+  background-color: getColor(primary, 1100);
 }
 
 .workspace-tab-header-container {
@@ -678,7 +678,7 @@ svg {
   cursor: pointer;
 }
 .workspace-tab-header-container .workspace-tab-header.is-active {
-  background-color: var(--color-primary-800);
+  background-color: getColor(primary, 800);
   border-radius: 10px;
 }
 .workspace-tab-header-container .workspace-tab-header-inner {
@@ -701,23 +701,23 @@ svg {
 }
 
 .view-content .tree-item-inner {
-  color: var(--color-text-paragraph);
+  color: getColor(text, paragraph);
 }
 
 .tag-pane-tag-text {
-  color: var(--color-text-paragraph);
+  color: getColor(text, paragraph);
 }
 .tag-pane-tag-text:before {
   content: "# ";
 }
 
 .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-header-container .sidebar-toggle-button.mod-right {
-  background-color: var(--color-primary-900);
+  background-color: getColor(primary, 900);
 }
 
 .tag-pane-tag-count {
-  color: var(--color-text-hash-tag);
-  background-color: var(--color-primary-1100);
+  color: getColor(text, hash-tag);
+  background-color: getColor(primary, 1100);
 }
 
 * {
@@ -729,24 +729,24 @@ svg {
 }
 
 .titlebar {
-  background-color: var(--color-primary-1000);
+  background-color: getColor(primary, 1000);
 }
 .titlebar .titlebar-text {
-  color: var(--color-text-quote);
+  color: getColor(text, quote);
 }
 .titlebar .titlebar-button-container.mod-left .titlebar-button svg {
   color: white;
 }
 
 .workspace-ribbon:before, .side-dock-ribbon:before, .mod-left:before {
-  background-color: var(--color-primary-900) !important;
+  background-color: getColor(primary, 900) !important;
   border: none !important;
 }
 
 .workspace-split,
 .workspace-ribbon,
 .workspace-ribbon.mod-left.is-collapsed {
-  border-right: 1px solid var(--color-element-border);
+  border-right: 1px solid getColor(element, border);
 }
 
 .workspace-ribbon.mod-right.is-collapsed {
@@ -757,13 +757,13 @@ svg {
   width: 5px;
 }
 .CodeMirror-vscrollbar::-webkit-scrollbar-thumb, .markdown-preview-view::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary-600);
+  background-color: getColor(primary, 600);
 }
 .CodeMirror-vscrollbar::-webkit-scrollbar-button, .markdown-preview-view::-webkit-scrollbar-button {
   height: 100%;
 }
 .CodeMirror-vscrollbar::-webkit-scrollbar-track, .markdown-preview-view::-webkit-scrollbar-track {
-  background-color: var(--color-primary-800);
+  background-color: getColor(primary, 800);
 }
 
 .status-bar,
@@ -775,16 +775,16 @@ svg {
 .workspace-leaf-resize-handle,
 .workspace-split .workspace-tabs:not(:first-child),
 .workspace-tab-header-container {
-  background-color: var(--color-primary-900);
+  background-color: getColor(primary, 900);
 }
 
 .status-bar {
-  color: var(--color-text-quote);
-  border-top: 1px solid var(--color-primary-900);
+  color: getColor(text, quote);
+  border-top: 1px solid getColor(primary, 900);
 }
 
 .workspace-split.mod-root .view-content, .workspace-split.mod-root .CodeMirror-gutter {
-  background-color: var(--color-primary-800);
+  background-color: getColor(primary, 800);
 }
 
 .workspace-leaf-content {
@@ -796,29 +796,29 @@ svg {
 }
 .workspace-leaf .view-header {
   padding-right: 0;
-  background-color: var(--color-primary-900);
+  background-color: getColor(primary, 900);
   border: none;
 }
 .workspace-leaf .view-header .view-header-title {
-  color: var(--color-element-icon);
+  color: getColor(element, icon);
 }
 .workspace-leaf .view-header .view-actions {
   padding: 12px;
-  color: var(--color-element-icon);
-  background-color: var(--color-primary-900);
+  color: getColor(element, icon);
+  background-color: getColor(primary, 900);
 }
 .workspace-leaf.mod-active .view-header {
-  background-color: var(--color-primary-800);
+  background-color: getColor(primary, 800);
 }
 .workspace-leaf.mod-active .view-header .view-header-title {
-  color: var(--color-element-icon);
+  color: getColor(element, icon);
 }
 .workspace-leaf.mod-active .view-header .view-header-title:after {
   content: none;
 }
 .workspace-leaf.mod-active .view-header .view-actions {
-  color: var(--color-element-icon);
-  background-color: var(--color-primary-800);
+  color: getColor(element, icon);
+  background-color: getColor(primary, 800);
 }
 
 .modal-content,
@@ -826,7 +826,7 @@ svg {
 .vertical-tab-content-container,
 .vertical-tab-content,
 .vertical-tabs-container {
-  background-color: var(--color-primary-700);
+  background-color: getColor(primary, 700);
 }
 .modal-content input[type=range]::-webkit-slider-thumb,
 .modal.mod-settings input[type=range]::-webkit-slider-thumb,
@@ -837,16 +837,16 @@ svg {
 }
 
 .vertical-tab-header, .vertical-tab-header-group, .vertical-tab-header-group, .modal.mod-settings, .vertical-tab-header-group, .vertical-tab-header-group-items, .vertical-tab-nav-item {
-  background-color: var(--color-primary-900);
+  background-color: getColor(primary, 900);
 }
 .vertical-tab-header.is-active, .vertical-tab-header-group.is-active, .vertical-tab-header-group.is-active, .modal.mod-settings.is-active, .vertical-tab-header-group.is-active, .vertical-tab-header-group-items.is-active, .vertical-tab-nav-item.is-active {
-  background-color: var(--color-primary-800);
-  border-color: var(--color-element-icon);
+  background-color: getColor(primary, 800);
+  border-color: getColor(element, icon);
 }
 
 .checkbox-container {
-  background-color: var(--color-primary-100);
+  background-color: getColor(primary, 100);
 }
 .checkbox-container.is-enabled {
-  background-color: var(--color-title-h3);
+  background-color: getColor(title, h3);
 }
