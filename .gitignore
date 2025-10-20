@@ -19,9 +19,9 @@ nuxt.d.ts
 .eslintcache
 
 # Package managers
-# .yarn/*
-# !.yarn/releases
-# !.yarn/plugins
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
 
 # Environment & secrets
 .env
