@@ -1,3 +1,6 @@
+@use "./_colors.scss" as colors;
+
+
 .cm-s-obsidian {
   width: 100%;
 
@@ -15,7 +18,7 @@
 
   .cm-formatting,
   .CodeMirror-foldmarker {
-    color: getColor(primary, 100);
+    color: colors.get-color(primary, 100);
   }
 
 }

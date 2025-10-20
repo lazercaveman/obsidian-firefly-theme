@@ -1,12 +1,16 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .markdown-preview-view {
 
   p {
     .tag {
       padding: 10px;
-      color: getColor(text, hash-tag);
-      background-color: getColor(primary, 1000);
+      color: colors.get-color(text, hash-tag);
+      background-color: colors.get-color(primary, 1000);
       border-radius: 5px;
-      font-size: font(size, small);
+      font-size: texts.font(size, small);
       font-weight: 500;
     }
   }

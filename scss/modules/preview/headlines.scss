@@ -1,3 +1,7 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .markdown-preview-view {
 
   h1,
@@ -8,50 +12,50 @@
   h6 {
     display: block;
     align-items: center;
-    font-family: font(family, primary);
+    font-family: texts.font(family, primary);
     font-weight: 600;
-    line-height: font(lineheight, regular);
+    line-height: texts.font(lineheight, regular);
     white-space: pre-wrap;
   }
 
   h1 {
-    font-size: font(size, 4xtra-large);
-    color: getColor(title, h1);
+    font-size: texts.font(size, 4xtra-large);
+    color: colors.get-color(title, h1);
   }
 
   h2 {
-    color: getColor(title, h2);
-    font-size: font(size, 3xtra-large);
+    color: colors.get-color(title, h2);
+    font-size: texts.font(size, 3xtra-large);
   }
 
   h3 {
-    color: getColor(title, h3);
-    font-size: font(size, 2xtra-large);
+    color: colors.get-color(title, h3);
+    font-size: texts.font(size, 2xtra-large);
   }
 
   h4 {
-    color: getColor(title, h4);
-    font-size: font(size, xtra-large);
+    color: colors.get-color(title, h4);
+    font-size: texts.font(size, xtra-large);
   }
 
   h5 {
-    color: getColor(title, h5);
-    font-size: font(size, large);
+    color: colors.get-color(title, h5);
+    font-size: texts.font(size, large);
   }
 
   h6 {
-    color: getColor(title, h6);
-    font-size: font(size, large);
+    color: colors.get-color(title, h6);
+    font-size: texts.font(size, large);
   }
 
   hr {
     height: 1px;
     border: none;
-    background-color: getColor(element, border-light);
+    background-color: colors.get-color(element, border-light);
   }
 
   .heading-collapse-indicator {
-    color: getColor(primary, 600);
+    color: colors.get-color(primary, 600);
   }
 
 }

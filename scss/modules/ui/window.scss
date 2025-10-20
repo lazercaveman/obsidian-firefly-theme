@@ -1,3 +1,6 @@
+@use "./_colors.scss" as colors;
+
+
 * {
   border: none!important;
 }
@@ -7,9 +10,9 @@
 }
 
 .titlebar {
-  background-color: getColor(primary, 1000);
+  background-color: colors.get-color(primary, 1000);
   .titlebar-text {
-    color: getColor(text, quote);
+    color: colors.get-color(text, quote);
   }
   .titlebar-button-container.mod-left .titlebar-button svg {
     color: white;
@@ -18,7 +21,7 @@
 
 .workspace-ribbon, .side-dock-ribbon, .mod-left {
   &:before {
-    background-color: getColor(primary, 900)!important;
+    background-color: colors.get-color(primary, 900)!important;
     border: none!important;
   }
 }
@@ -26,7 +29,7 @@
 .workspace-split,
 .workspace-ribbon,
 .workspace-ribbon.mod-left.is-collapsed {
-  border-right: 1px solid getColor(element, border);
+  border-right: 1px solid colors.get-color(element, border);
 }
 
 .workspace-ribbon.mod-right.is-collapsed {
@@ -38,13 +41,13 @@
     width: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: getColor(primary, 600);
+    background-color: colors.get-color(primary, 600);
   }
   &::-webkit-scrollbar-button {
     height: 100%;
   }
   &::-webkit-scrollbar-track {
-    background-color: getColor(primary, 800);
+    background-color: colors.get-color(primary, 800);
   }
 }
 
@@ -57,17 +60,17 @@
 .workspace-leaf-resize-handle,
 .workspace-split .workspace-tabs:not(:first-child),
 .workspace-tab-header-container {
-  background-color: getColor(primary, 900);
+  background-color: colors.get-color(primary, 900);
 }
 
 .status-bar {
-  color: getColor(text, quote);
-  border-top: 1px solid getColor(primary, 900);
+  color: colors.get-color(text, quote);
+  border-top: 1px solid colors.get-color(primary, 900);
 }
 
 .workspace-split.mod-root {
   .view-content, .CodeMirror-gutter {
-    background-color: getColor(primary, 800);
+    background-color: colors.get-color(primary, 800);
   }
 }
 
@@ -83,30 +86,30 @@
 
   .view-header {
     padding-right: 0;
-    background-color: getColor(primary, 900);
+    background-color: colors.get-color(primary, 900);
     border: none;
     .view-header-title {
-      color: getColor(element, icon);
+      color: colors.get-color(element, icon);
     }
     .view-actions {
       padding: 12px;
-      color: getColor(element, icon);
-      background-color: getColor(primary, 900);
+      color: colors.get-color(element, icon);
+      background-color: colors.get-color(primary, 900);
     }
   }
 
   &.mod-active {
     .view-header {
-      background-color: getColor(primary, 800);
+      background-color: colors.get-color(primary, 800);
       .view-header-title {
-        color: getColor(element, icon);
+        color: colors.get-color(element, icon);
         &:after {
           content: none;
         }
       }
       .view-actions {
-        color: getColor(element, icon);
-        background-color: getColor(primary, 800);
+        color: colors.get-color(element, icon);
+        background-color: colors.get-color(primary, 800);
       }
     }
   }

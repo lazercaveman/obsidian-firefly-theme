@@ -1,12 +1,16 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .cm-s-obsidian {
 
   span.cm-hashtag {
     padding: 5px;
-    color: getColor(text, hash-tag);
-    background-color: getColor(primary, 900);
-    font-size: font(size, regular);
+    color: colors.get-color(text, hash-tag);
+    background-color: colors.get-color(primary, 900);
+    font-size: texts.font(size, regular);
     &.cm-formatting{
-      color: getColor(primary, 100);
+      color: colors.get-color(primary, 100);
     }
   }
 

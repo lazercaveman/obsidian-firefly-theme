@@ -1,7 +1,10 @@
+@use "./_colors.scss" as colors;
+
+
 .CodeMirror.cm-s-obsidian.CodeMirror-wrap, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width: 940px;
 }
 
 .view-header {
-  background-color: getColor(primary, 900)!important;
+  background-color: colors.get-color(primary, 900)!important;
 }

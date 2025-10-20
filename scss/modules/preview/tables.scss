@@ -1,3 +1,6 @@
+@use "./_colors.scss" as colors;
+
+
 .markdown-preview-view {
 
   table {
@@ -9,8 +12,8 @@
     th {
       padding: 10px 40px;
       border: none;
-      color: getColor(title, h3);
-      background-color: getColor(primary, 700)!important;
+      color: colors.get-color(title, h3);
+      background-color: colors.get-color(primary, 700)!important;
       &:first-child {
         border-radius: 20px 0 0 20px;
       }
@@ -22,7 +25,7 @@
 
   tbody tr {
     &:nth-child(even) {
-      background-color: getColor(primary, 700);
+      background-color: colors.get-color(primary, 700);
     }
     td {
       padding: 10px 40px;
@@ -35,8 +38,8 @@
       }
       strong {
         font-weight: 400;
-        color: getColor(text, strong);
-        filter: drop-shadow(0 0 3px getColor(text, paragraph));
+        color: colors.get-color(text, strong);
+        filter: drop-shadow(0 0 3px colors.get-color(text, paragraph));
       }
     }
   }

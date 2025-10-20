@@ -1,9 +1,13 @@
+@use "./_colors.scss" as colors;
+@use "./_text.scss" as texts;
+
+
 .markdown-preview-view {
 
   ul:not(.contains-task-list) ul:not(.contains-task-list) {
     margin-left: -13px;
     padding-inline-start: 42px;
-    border-left: 1px solid getColor(primary, 500);
+    border-left: 1px solid colors.get-color(primary, 500);
   }
 
   ul, ol {
@@ -13,13 +17,13 @@
 
     li {
       margin: 5px 0;
-      color: getColor(text, paragraph);
-      font-size: font(size, regular);
-      line-height: font(lineheight, regular);
+      color: colors.get-color(text, paragraph);
+      font-size: texts.font(size, regular);
+      line-height: texts.font(lineheight, regular);
       strong {
         font-weight: 400;
-        color: getColor(text, strong);
-        filter: drop-shadow(0 0 3px getColor(text, paragraph));
+        color: colors.get-color(text, strong);
+        filter: drop-shadow(0 0 3px colors.get-color(text, paragraph));
       }
     }
   }
@@ -27,7 +31,7 @@
   ul li {
     padding-left: 10px;
     &::marker {
-      color: getColor(element, unordered-list-indicator)!important;
+      color: colors.get-color(element, unordered-list-indicator)!important;
     }
   }
 
@@ -35,12 +39,12 @@
     margin-left: 32px;
 
     &::marker {
-      color: getColor(element, ordered-list-indicator);
+      color: colors.get-color(element, ordered-list-indicator);
     }
   }
 
   .list-collapse-indicator {
-    color: getColor(primary, 500);
+    color: colors.get-color(primary, 500);
   }
 
   li > p {
@@ -60,18 +64,18 @@
       min-width: 22px;
       height: 22px;
       min-height: 22px;
-      background-color: getColor(primary, 500);
-      border: 2px solid getColor(primary, 100);
+      background-color: colors.get-color(primary, 500);
+      border: 2px solid colors.get-color(primary, 100);
       border-radius: 3px;
       filter: none;
       cursor: pointer;
       appearance: none;
       -webkit-appearance: none;
       &:checked {
-        background-color: getColor(primary, 100)!important;
+        background-color: colors.get-color(primary, 100)!important;
         &:before {
           content: '✓';
-          color: getColor(element, unordered-list-indicator);
+          color: colors.get-color(element, unordered-list-indicator);
           font-weight: 900;
           position: absolute;
           top: 50%;
@@ -84,7 +88,7 @@
       }
     }
     &.is-checked {
-      color: getColor(text, paragraph)!important;
+      color: colors.get-color(text, paragraph)!important;
       text-decoration: none!important;
     }
   }

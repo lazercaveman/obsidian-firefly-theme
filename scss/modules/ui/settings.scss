@@ -1,9 +1,12 @@
+@use "./_colors.scss" as colors;
+
+
 .modal-content,
 .modal.mod-settings,
 .vertical-tab-content-container,
 .vertical-tab-content,
 .vertical-tabs-container {
-  background-color: getColor(primary, 700);
+  background-color: colors.get-color(primary, 700);
 
   input[type=range]::-webkit-slider-thumb {
     background: #ffffff;
@@ -12,18 +15,18 @@
 }
 
 .vertical-tab-header, .vertical-tab-header-group, .vertical-tab-header-group, .modal.mod-settings, .vertical-tab-header-group, .vertical-tab-header-group-items, .vertical-tab-nav-item {
-  background-color: getColor(primary, 900);
+  background-color: colors.get-color(primary, 900);
 
   &.is-active {
-    background-color: getColor(primary, 800);
-    border-color: getColor(element, icon);
+    background-color: colors.get-color(primary, 800);
+    border-color: colors.get-color(element, icon);
   }
 }
 
 .checkbox-container {
-  background-color: getColor(primary, 100);
+  background-color: colors.get-color(primary, 100);
 
   &.is-enabled {
-    background-color: getColor(title, h3);
+    background-color: colors.get-color(title, h3);
   }
 }
