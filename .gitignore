@@ -1,11 +1,40 @@
-node_modules/
+# Logs
+*.log
+logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Editor directories and files
+# Nuxt/Vue build artifacts
+.nuxt
+.output
+nuxt.d.ts
+
+# compiled output
+/node_modules
+
+# Cache files
+.eslintcache
+
+# Package managers
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+
+# Environment & secrets
 .env
-.idea
-.vscode
+
+# OS
 .DS_Store
 
-# Prevent upload of CSS files but firefly.css (in case this runs directly within obsidian themes folder)
-*.css
-!obsidian.css
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.code-workspace
